@@ -1,0 +1,287 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.teko {
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-size: 100%;
+}
+
+@media (max-width: 760px) {
+    body {
+        font-size: 30%;
+    }
+
+}
+
+div.gradedbgp img {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+div.gradedbgp h1 {
+    font-family: "Pacifico";
+    font-size: 7em;
+    color: #b89d47;
+    width: 100vw;
+    height: 7vh;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    top: 29vh;
+}
+
+@media (max-width: 760px) {
+    div.gradedbgp h1 {
+        font-family: "Pacifico";
+        font-size: 9em;
+        color: #b89d47;
+        width: 100vw;
+        height: 10vh;
+        margin: 0;
+        text-align: center;
+        align-items: center;
+        justify-items: center;
+        position: absolute;
+        top: 15vh;
+    }
+}
+
+div.gradedbgp h2 {
+    font-family: "Teko", sans-serif;
+    font-size: 1.6em;
+    color: #b89d47;
+    width: 100vw;
+    height: 6vh;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+    top: 48vh;
+}
+
+@media (max-width: 760px) {
+    div.gradedbgp h2 {
+        font-family: "Teko", sans-serif;
+        font-size: 4em;
+        color: #b89d47;
+        width: 100vw;
+        height: 10vh;
+        margin: 0;
+        text-align: center;
+        align-items: center;
+        justify-items: center;
+        position: absolute;
+        top: 30vh;
+    }
+
+}
+
+div.gradedbgp p {
+    font-family: "Teko";
+    font-size: 1.5em;
+    color: #b89d47;
+    width: 100vw;
+    height: 10vh;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+    top: 55vh;
+
+}
+
+@media (max-width: 760px) {
+    div.gradedbgp p {
+        font-family: "Teko";
+        font-size: 4em;
+        color: #b89d47;
+        width: 100vw;
+        height: 10vh;
+        margin: 0;
+        text-align: center;
+        align-items: center;
+        justify-items: center;
+        position: absolute;
+        top: 38vh;
+
+    }
+}
+
+div form.letusform {
+    font-family: "Teko";
+    font-size: 1.5em;
+    font-style: bold;
+    color: #b89d47;
+    width: 35vw;
+    height: 15vh;
+    margin: 0;
+
+    justify-items: center;
+    position: fixed;
+    top: 63vh;
+    left: 32.5vw;
+    position: fixed;
+
+}
+
+@media (max-width: 760px) {
+    div form.letusform {
+        font-family: "Teko";
+        font-size: 5em;
+        font-style: bold;
+        color: #b89d47;
+        width: 100vw;
+        height: 50vh;
+        position: fixed;
+        top: 50vh;
+        left: 0vw;
+
+    }
+}
+
+div form div.fullname {
+    width: 13.5vw;
+    height: 7vh;
+    font-family: "Teko";
+    font-size: 0.7em;
+    margin: 0;
+    text-align: left;
+    position: absolute;
+    left: 0vw;
+    align-content: start;
+}
+
+@media (max-width: 760px) {
+    div form div.fullname {
+        width: 70vw;
+        height: 4vh;
+        left: 15vw;
+
+    }
+}
+
+div form input[type="text"] {
+    width: 13.5vw;
+    height: 6vh;
+    font-family: "Teko";
+    font-size: 1em;
+    align-content: start;
+    border-color: #b89d47;
+    background-color: rgba(245, 222, 179, 0);
+}
+
+@media (max-width: 760px) {
+    div form input[type="text"] {
+        width: 70vw;
+        height: 6vh;
+        font-family: "Teko";
+        border-color: #b89d47;
+        background-color: rgba(245, 222, 179, 0);
+    }
+}
+
+div form div.email {
+    width: 13.5vw;
+    height: 7vh;
+    font-size: 0.7em;
+    margin: 0;
+    text-align: left;
+    position: absolute;
+    left: 14.5vw;
+    align-content: start;
+}
+
+@media (max-width: 760px) {
+    div form div.email {
+        width: 70vw;
+        height: 4vh;
+        top: 12vh;
+        left: 15vw;
+    }
+}
+
+div form input[type="email"] {
+    width: 13.5vw;
+    height: 6vh;
+    font-family: "Teko";
+    font-size: 1em;
+    border-color: #b89d47;
+    background-color: rgba(245, 222, 179, 0);
+    align-content: start;
+}
+
+@media (max-width: 760px) {
+    div form input[type="email"] {
+        width: 70vw;
+        height: 6vh;
+        font-family: "Teko";
+        font-size: 1em;
+        border-color: #b89d47;
+        background-color: rgba(245, 222, 179, 0);
+
+    }
+}
+
+div form div.send {
+    width: 9vw;
+    height: 13vh;
+    margin: 0;
+    position: absolute;
+    left: 29vw;
+    padding: 2.4vh 0vw;
+}
+
+@media (max-width: 760px) {
+    div form div.send {
+        width: 70vw;
+        height: 4vh;
+        top: 25vh;
+        left: 15vw;
+    }
+}
+
+div form input[type="submit"] {
+    width: 9vw;
+    height: 6vh;
+    font-family: "Teko";
+    font-size: 0.6em;
+    color: white;
+    background-color: #b89d47;
+    border: none;
+    text-align: center;
+
+
+}
+
+@media (max-width: 760px) {
+    div form input[type="submit"] {
+        width: 70vw;
+        height: 6vh;
+        font-family: "Teko";
+        font-size: 0.7em;
+        color: white;
+        background-color: #b89d47;
+        border: none;
+        text-align: center;
+    }
+
+}

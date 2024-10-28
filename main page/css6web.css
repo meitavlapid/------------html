@@ -1,0 +1,659 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.heebo {
+    font-family: "Heebo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100-900;
+    font-style: normal;
+}
+
+body {
+    direction: rtl;
+}
+
+div#formbox {
+    width: 100vw;
+    height: 100vh;
+    background: #FFFFFF;
+    display: flex;
+}
+
+@media (300px <=width <=760px) {
+    div#formbox {
+        width: 100vw;
+        height: 100vh;
+        background: #FFFFFF;
+        display: flex;
+    }
+}
+
+div.bordertop {
+    width: 19vw;
+    height: 7vh;
+    border-top: 18px solid #FDBD03;
+}
+
+@media (300px <=width <=760px) {
+    div.bordertop {
+        width: 88vw;
+        height: 7vh;
+        border-top: 18px solid #FDBD03;
+    }
+}
+
+div#formbox h1 {
+    font-family: "Heebo", sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+    color: #FDBD03;
+    width: 55vw;
+    height: 7vh;
+    top: 15vh;
+    position: absolute;
+}
+
+@media (300px <=width <=760px) {
+    div#formbox h1 {
+        font-family: "Heebo", sans-serif;
+        font-size: 4em;
+        font-weight: 700;
+        color: #FDBD03;
+        width: 100%;
+        height: 6vh;
+        position: absolute;
+        top: 0;
+        text-align: center;
+    }
+}
+
+div#formbox p {
+    font-family: "Heebo", sans-serif;
+    font-size: 1em;
+    color: #020253;
+    width: 17vw;
+    height: 6vh;
+    top: 23vh;
+    position: absolute;
+}
+
+@media (760px <=width <=1150px) {
+    div#formbox p {
+        font-size: 1em;
+        color: #020253;
+        width: 30vw;
+        top: 23vh;
+        position: absolute;
+    }
+}
+
+@media (300px <=width <=760px) {
+    div#formbox p {
+        font-family: "Heebo", sans-serif;
+        font-size: 1.3em;
+        color: #020253;
+        width: 70%;
+        height: 6vh;
+        top: 11vh;
+        right: 15%;
+        position: absolute;
+        text-align: center;
+    }
+}
+
+div.phon {
+    width: 43vw;
+    height: 80vh;
+    margin: 0;
+    top: 10vh;
+    text-align: right;
+}
+
+@media (300px <=width <=760px) {
+    div.phon {
+        width: 100vw;
+        height: 30vh;
+        margin: 0;
+        display: flex;
+        position: absolute;
+        top: 1vh;
+    }
+}
+
+div img.formimg {
+    width: 25vw;
+    height: 65vh;
+    text-align: right;
+    top: 8vh;
+    right: 7vh;
+    position: absolute;
+}
+
+@media (300px <=width <=760px) {
+    div img.formimg {
+        width: 20vw;
+        height: 15vh;
+        top: 7vh;
+        position: absolute;
+        right: 41vw;
+    }
+}
+
+div form.theform {
+    width: 57vw;
+    height: 100vh;
+    margin: 0;
+    right: 43vw;
+    font-family: "Heebo", sans-serif;
+    color: #2C2C2C;
+    position: absolute;
+    border-bottom: 18px solid #FDBD03;
+}
+
+@media (300px <=width <=760px) {
+    div form.theform {
+        width: 100%;
+        height: 85vh;
+        margin: 0;
+        top: 31vh;
+        right: 0;
+        font-family: "Heebo", sans-serif;
+        color: #2C2C2C;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        text-align: right;
+        border-bottom: 18px solid #FDBD03;
+    }
+}
+
+div form label.fullname {
+    width: 30vw;
+    height: 3vh;
+    top: 31vh;
+    position: absolute;
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+@media (300px <=width <=760px) {
+    div form label.fullname {
+        width: 80%;
+        height: 5vh;
+        top: 21vh;
+        position: absolute;
+        font-size: 1.3em;
+        font-weight: 700;
+    }
+}
+
+div form input[type="text"] {
+    font-family: "Heebo", sans-serif;
+    font-size: 0.9em;
+    width: 25vw;
+    height: 5vh;
+    position: absolute;
+    top: 33vh;
+    border: none;
+    background-color: #E5EEFF;
+    border-bottom: 6px solid #FDBD03;
+
+}
+
+@media (300px <=width <=760px) {
+    div form input[type="text"] {
+        font-family: "Heebo", sans-serif;
+        font-size: 1.3em;
+        width: 80%;
+        height: 5vh;
+        position: absolute;
+        top: 23.5vh;
+        border: none;
+        background-color: #E5EEFF;
+        border-bottom: 6px solid #FDBD03;
+        justify-items: center;
+    }
+}
+
+div form label.email {
+    width: 30vw;
+    height: 5vh;
+    top: 31vh;
+    right: 26.3vw;
+    position: absolute;
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+@media (300px <=width <=760px) {
+    div form label.email {
+        width: 80%;
+        height: 5vh;
+        top: 30.5vh;
+        font-size: 1.3em;
+        font-weight: 700;
+        right: 10vw;
+    }
+}
+
+div form input[type="email"] {
+    font-family: "Heebo", sans-serif;
+    font-size: 0.9em;
+    width: 25vw;
+    height: 5vh;
+    border: none;
+    top: 33vh;
+    right: 26.3vw;
+    left: 0;
+    background-color: #E5EEFF;
+    border-bottom: 6px solid#FDBD03;
+    position: absolute;
+}
+
+@media (300px <=width <=760px) {
+    div form input[type="email"] {
+        font-family: "Heebo", sans-serif;
+        font-size: 1.3em;
+        width: 80%;
+        height: 5vh;
+        border: none;
+        top: 33vh;
+        background-color: #E5EEFF;
+        border-bottom: 6px solid#FDBD03;
+        justify-self: center;
+        right: 10vw;
+    }
+}
+
+div form label.textarea {
+    width: 30vw;
+    height: 3vh;
+    top: 41vh;
+    position: absolute;
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+@media (300px <=width <=760px) {
+    div form label.textarea {
+        width: 80%;
+        height: 10vh;
+        top: 40vh;
+        font-size: 1.3em;
+        font-weight: 700;
+    }
+}
+
+div form textarea {
+    font-family: "Heebo", sans-serif;
+    font-size: 0.9em;
+    font-weight: 700;
+    width: 51.4vw;
+    height: 12vh;
+    top: 43vh;
+    border: none;
+    background-color: #E5EEFF;
+    border-bottom: 6px solid #FDBD03;
+    resize: none;
+    position: absolute;
+}
+
+@media (300px <=width <=760px) {
+    div form textarea {
+        font-family: "Heebo", sans-serif;
+        font-size: 1.3em;
+        font-weight: 700;
+        width: 80%;
+        height: 9vh;
+        top: 42.5vh;
+        border: none;
+        background-color: #E5EEFF;
+        border-bottom: 6px solid #FDBD03;
+        resize: none;
+        position: absolute;
+    }
+}
+
+div form div.send {
+    width: 10vw;
+    height: 3vh;
+    position: absolute;
+    font-size: 1.5em;
+
+}
+
+@media (300px <=width <=760px) {
+    div form div.send {
+        width: 80%;
+        height: 5vh;
+        position: absolute;
+        font-size: 1.7em;
+        font-weight: 700;
+    }
+}
+
+div form input[type="submit"] {
+    font-family: "Heebo", sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    width: 11vw;
+    height: 3vh;
+    background-color: #FDBD03;
+    border: none;
+    top: 60vh;
+    position: absolute;
+}
+
+@media (300px <=width <=760px) {
+    div form input[type="submit"] {
+        font-family: "Heebo", sans-serif;
+        font-size: 1.8em;
+        font-weight: 700;
+        width: 80%;
+        height: 5vh;
+        background-color: #FDBD03;
+        border: none;
+        top: 54vh;
+        position: absolute;
+    }
+}
+
+div#contact {
+    width: 100vw;
+    height: 10vh;
+    background: none;
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    text-align: center;
+    justify-items: center;
+    bottom: 0vh;
+}
+
+@media (300px <=width <=760px) {
+    div#contact {
+        width: 100%;
+        height: 10vh;
+        background: none;
+        display: flex;
+        position: absolute;
+        flex-direction: row;
+        text-align: center;
+        justify-items: center;
+        top: 105vh;
+    }
+}
+
+div.facebook {
+    width: 5vh;
+    height: 5vh;
+    box-shadow: 0px 5px 10px #00000029;
+    background-color: #FDBD03;
+    border-radius: 50%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 2.5vw;
+    top: 1vh;
+}
+
+@media (760px <=width <=1150px) {
+    div.facebook {
+        width: 4vh;
+        height: 4vh;
+        top: 1.5vh;
+        left: 2.5vw;
+    }
+}
+
+@media (300px <=width <=760px) {
+    div.facebook {
+        width: 5vh;
+        height: 5vh;
+        box-shadow: 0px 5px 10px #00000029;
+        background-color: #FDBD03;
+        border-radius: 50%;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        left: 19vw;
+        top: 1vh;
+    }
+}
+
+div.facebook img {
+    width: 2vh;
+    height: 2vh;
+    color: #FDBD03;
+    position: absolute;
+}
+
+@media (300px <=width <=760px) {
+    div.facebook img {
+        width: 2vh;
+        height: 2vh;
+        color: #FDBD03;
+        position: absolute;
+    }
+}
+
+div.linkedin img {
+    width: 2vh;
+    height: 2vh;
+    color: #FDBD03;
+    position: absolute;
+}
+
+@media (300px <=width <=760px) {
+    div.linkedin img {
+        width: 2vh;
+        height: 2vh;
+        color: #FDBD03;
+        position: absolute;
+    }
+}
+
+div.linkedin {
+    width: 5vh;
+    height: 5vh;
+    box-shadow: 0px 5px 10px #00000029;
+    background-color: #FDBD03;
+    border-radius: 50%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 17.5vw;
+    top: 1vh;
+}
+
+@media (760px <=width <=1150px) {
+    div.linkedin {
+        width: 4vh;
+        height: 4vh;
+        top: 1.5vh;
+        left: 18.5vw;
+
+    }
+}
+
+@media (300px <=width <=760px) {
+    div.linkedin {
+        width: 5vh;
+        height: 5vh;
+        box-shadow: 0px 5px 10px #00000029;
+        background-color: #FDBD03;
+        border-radius: 50%;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        left: 54vw;
+        top: 1vh;
+    }
+}
+
+div.Phone img {
+    width: 2vh;
+    height: 2vh;
+    color: #FDBD03;
+    position: absolute;
+}
+
+@media (300px <=width <=760px) {
+    div.Phone img {
+        width: 2vh;
+        height: 2vh;
+        color: #FDBD03;
+        position: absolute;
+    }
+}
+
+div.Phone {
+    width: 5vh;
+    height: 5vh;
+    box-shadow: 0px 5px 10px #00000029;
+    background-color: #FDBD03;
+    border-radius: 50%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 25vw;
+    top: 1vh;
+}
+
+@media (760px <=width <=1150px) {
+    div.Phone {
+        width: 4vh;
+        height: 4vh;
+        top: 1.5vh;
+        left: 26vw;
+    }
+}
+
+@media (300px <=width <=760px) {
+    div.Phone {
+        width: 5vh;
+        height: 5vh;
+        box-shadow: 0px 5px 10px #00000029;
+        background-color: #FDBD03;
+        border-radius: 50%;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        left: 72vw;
+        top: 1vh;
+    }
+}
+
+div.whatsapp img {
+    width: 2vh;
+    height: 2vh;
+    color: #FDBD03;
+    position: absolute;
+}
+
+@media (300px <=width <=760px) {
+    div.whatsapp img {
+        display: none;
+    }
+}
+
+div.whatsapp {
+    width: 5vh;
+    height: 5vh;
+    box-shadow: 0px 5px 10px #00000029;
+    background-color: #FDBD03;
+    border-radius: 50%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 2vw;
+    top: 2vh;
+}
+
+@media (760px <=width <=1150px) {
+    div.whatsapp {
+        width: 4vh;
+        height: 4vh;
+        top: 2vh;
+        left: 2vw;
+    }
+}
+
+@media (300px <=width <=760px) {
+    div.whatsapp {
+        display: none;
+    }
+}
+
+div.instegram img {
+    width: 2vh;
+    height: 2vh;
+    display: block;
+}
+
+@media (300px <=width <=760px) {
+    div.instegram img {
+        width: 2vh;
+        height: 2vh;
+        display: block;
+    }
+}
+
+div.instegram {
+    width: 5vh;
+    height: 5vh;
+    box-shadow: 0px 5px 10px #00000029;
+    background-color: #FDBD03;
+    border-radius: 50%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 1vh;
+    left: 9.7vw;
+}
+
+@media (760px <=width <=1150px) {
+    div.instegram {
+        width: 4vh;
+        height: 4vh;
+        top: 1.5vh;
+        left: 10.7vw;
+    }
+}
+
+@media (300px <=width <=760px) {
+    div.instegram {
+        width: 5vh;
+        height: 5vh;
+        box-shadow: 0px 5px 10px #00000029;
+        background-color: #FDBD03;
+        border-radius: 50%;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        top: 1vh;
+        left: 37vw;
+    }
+}
+
+
+
+
+
+
+@media (760px <=width <=1150px) {}
+
+@media (300px <=width <=760px) {}

@@ -37,7 +37,7 @@ header nav ul {
 header nav ul li {
     float: left;
     list-style-type: none;
-    font-family: teko;
+    font-family: serif;
     text-align: center;
 }
 
@@ -46,6 +46,7 @@ header nav ul li.main {
     height: 37px;
     margin: 24px 61px 19px 310px;
     color: #ffedd1;
+
 }
 
 header nav ul li.about {
@@ -87,18 +88,18 @@ section #top {
 }
 
 section h1 {
-    font-family: "Teko";
+    font-family: "Teko", serif;
     font-size: 80pt;
     width: 404px;
     height: 118px;
     color: #72b0ab;
     margin: 140px 758px 0px 758px;
     align-content: end;
-    text-align: left;
+    text-align: center;
 }
 
 section p {
-    font-family: "Teko";
+    font-family: "Teko", serif;
     font-size: 20pt;
     color: #72b0ab;
     width: 844px;
@@ -137,7 +138,6 @@ section p.view a {
     display: block;
     color: #ffedd1;
     position: absolute;
-    ;
 }
 
 div.techIcons {
@@ -159,125 +159,18 @@ div.techIcons img {
 
 div#letusbox {
     width: 1920px;
-    height: 959px;
+    height: 1080px;
     background: #ffedd1;
     display: flex;
-
+    justify-content: center;
+    align-items: center;
 }
 
-/* div#letusbox h1 { */
-/* font-family: serif; */
-/* font-size: 36px; */
-/* color: #0b0b0b; */
-/* width: 190px; */
-/* height: 53px; */
-/* margin: 161px 1480.5px 16px 304.5px; */
-/* text-align: left; */
-/* position: absolute; */
 
-div form.letusform h1 {
-    font-family: "Pacifico";
-    font-size: 90pt;
-    color: #b89d47;
-    width: 700px;
-    height: 180px;
-    margin: 1px 150px 150px 50px;
-    text-align: center;
-    position: absolute;
-}
+div.box img {
 
-div form.letusform h2 {
-    font-family: "Teko";
-    font-size: 18pt;
-    color: #b89d47;
-    width: 555px;
-    height: 70px;
-    margin: 190px 150px 16px 125px;
-    text-align: center;
-    position: absolute;
-}
+    box-shadow: 0 0 20px 10px #00000066;
 
-div form.letusform p {
-    font-family: "Teko", serif;
-    font-size: 15pt;
-    color: #b89d47;
-    height: 70px;
-    width: 700px;
-    margin: 230px 200px 20px 50px;
-    text-align: center;
-    position: absolute;
-
-}
-
-div.gradedbgp img {
-    width: 1189px;
-    height: 718px;
-    margin: 112px 365px 184px 365px;
-    box-shadow: 10px 10px 200px #355e58;
-}
-
-div form.letusform {
-    width: 800px;
-    height: 399px;
-    margin: 260px 0px 250px 570px;
-    font-family: "Teko", serif;
-    font-size: 16px;
-    font-style: bold;
-    text-align: left;
-    color: #b89d47;
-    position: absolute;
-
-}
-
-div form div.fullname {
-    width: 290px;
-    height: 50px;
-    margin: 280px 20px 5px 20px;
-    position: absolute;
-}
-
-div form input[type="text"] {
-    width: 290px;
-    height: 30px;
-    font-family: "Teko";
-    font-size: 16pt;
-    border-color: #b89d47;
-    background-color: rgba(245, 222, 179, 0);
-}
-
-div form div.email {
-    width: 290px;
-    height: 30px;
-    margin: 280px 60px 0px 320px;
-    position: absolute;
-
-}
-
-div form input[type="email"] {
-    width: 290px;
-    height: 30px;
-    font-family: "Teko";
-    font-size: 16pt;
-    border-color: #b89d47;
-    background-color: rgba(245, 222, 179, 0);
-
-}
-
-div form div.send {
-    width: 200px;
-    height: 30px;
-    margin: 297px 60px 0px 620px;
-    position: absolute;
-}
-
-div form input[type="submit"] {
-    width: 140px;
-    height: 30px;
-    font-family: "Teko";
-    font-size: 16pt;
-    color: white;
-    background-color: #b89d47;
-    border: none;
 }
 
 footer {

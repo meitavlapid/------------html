@@ -1,0 +1,322 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+}
+
+@media (max-width: 760px) {
+    body {
+        font-size: 30%;
+    }
+
+}
+
+.teko {
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+div.box {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+div form.letusform h1 {
+    font-family: "Teko", serif;
+    font-size: 1.7em;
+    font-weight: 900;
+    color: white;
+    width: 23vw;
+    height: 10vh;
+    margin: 0 auto;
+    text-align: left;
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+    top: 4vh;
+    left: 4vw;
+
+}
+
+@media (max-width: 760px) {
+
+    div form.letusform h1 {
+        font-family: "Teko", serif;
+        font-size: 6em;
+        color: white;
+        width: 34.5vw;
+        height: 10vh;
+        margin: 0;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 5vh;
+        left: 25vw;
+        font-weight: 900;
+    }
+}
+
+div form.letusform p {
+    font-family: "Teko", serif;
+    font-size: 0.8em;
+    color: white;
+    height: 7vh;
+    width: 18vw;
+    margin: 0 auto;
+    text-align: left;
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+    top: 8.5vh;
+    left: 4vw;
+
+}
+
+@media (max-width: 760px) {
+    div form.letusform p {
+        font-family: "Teko", serif;
+        font-size: 2.5em;
+        color: white;
+        height: 5vh;
+        width: 60vw;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+        justify-items: center;
+        position: absolute;
+        top: 16vh;
+        left: 10vw;
+        font-weight: 500;
+    }
+}
+
+div.pinkbgp img {
+    width: 100vw;
+    height: 40vh;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    z-index: 0;
+}
+
+@media (max-width: 760px) {
+    div.pinkbgp img {
+        width: 100vw;
+        height: 30vh;
+        object-fit: cover;
+        display: block;
+        position: absolute;
+        z-index: 0;
+
+    }
+}
+
+div form.letusform {
+    width: 25vw;
+    height: 50vh;
+    position: absolute;
+    top: 8vh;
+    left: 15vw;
+    font-family: "Teko";
+    font-size: 0.9em;
+    font-weight: 500;
+    color: white;
+    margin: 0 auto;
+    text-align: left;
+    align-items: center;
+    justify-items: center;
+    background-color: #355e58b5;
+    z-index: 4;
+
+}
+
+@media (max-width: 760px) {
+    div form.letusform {
+        width: 80vw;
+        height: 55vh;
+        position: absolute;
+        top: 14vh;
+        left: 10vw;
+        font-family: "Teko", serif;
+        font-size: 1em;
+        font-style: bold;
+        color: white;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+        justify-items: center;
+        background-color: #355e58b5;
+        z-index: 4;
+
+    }
+}
+
+div form div.fullname {
+    width: 17vw;
+    height: 6vh;
+    font-size: 1em;
+    margin: 0 auto;
+    text-align: left;
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+    top: 17vh;
+    left: 4vw;
+}
+
+@media (max-width: 760px) {
+    div form div.fullname {
+        width: 60vw;
+        height: 6vh;
+        margin: 0 auto;
+        font-family: "Teko", serif;
+        font-size: 2.9em;
+        font-weight: 600;
+        text-align: left;
+        align-items: center;
+        justify-items: center;
+        position: absolute;
+        top: 25vh;
+        left: 10vw;
+
+    }
+
+}
+
+
+div form input[type="text"] {
+    width: 17vw;
+    height: 4vh;
+    font-family: "Teko";
+    font-size: 1em;
+    border-color: #fe9179;
+}
+
+@media (max-width: 760px) {
+
+    div form input[type="text"] {
+        width: 60vw;
+        height: 4vh;
+        font-family: "Teko";
+        font-size: 2em;
+        border-color: #fe9179;
+    }
+}
+
+div form div.email {
+    width: 17vw;
+    height: 6vh;
+    font-family: "Teko";
+    font-size: 1em;
+    margin: 0 auto;
+    text-align: left;
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+    top: 25vh;
+    left: 4vw;
+}
+
+@media (max-width: 760px) {
+
+    div form div.email {
+        width: 60vw;
+        height: 6vh;
+        margin: 0 auto;
+        font-family: "Teko", serif;
+        font-size: 2.9em;
+        font-weight: 600;
+        text-align: left;
+        align-items: center;
+        justify-items: center;
+        position: absolute;
+        top: 35vh;
+        left: 10vw;
+    }
+}
+
+div form input[type="email"] {
+    width: 17vw;
+    height: 4vh;
+    font-family: "Teko";
+    font-size: 1em;
+    border-color: #fe9179;
+}
+
+@media (max-width: 760px) {
+    div form input[type="email"] {
+        width: 60vw;
+        height: 4vh;
+        font-family: "Teko";
+        font-size: 2em;
+        border-color: #fe9179;
+    }
+}
+
+div form div.send {
+    width: 7vw;
+    height: 2.5vh;
+    font-family: "Teko";
+    font-size: 1em;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+    top: 35vh;
+    left: 4vw;
+}
+
+@media (max-width: 760px) {
+    div form div.send {
+        width: 20vw;
+        height: 2.5vh;
+        margin: 0 auto;
+        font-family: "Teko", serif;
+        font-size: 2.9em;
+        font-weight: 900;
+        text-align: center;
+        align-items: center;
+        justify-items: center;
+        position: absolute;
+        top: 43vh;
+        left: 10vw;
+    }
+
+}
+
+div form input[type="submit"] {
+    width: 7vw;
+    height: 4vh;
+    font-family: "Teko";
+    font-size: 1.5em;
+    color: white;
+    background-color: #fe9179;
+    border: none;
+}
+
+@media (max-width: 760px) {
+    div form input[type="submit"] {
+        width: 20vw;
+        height: 4vh;
+        font-family: "Teko";
+        font-size: 1.5em;
+        color: white;
+        background-color: #fe9179;
+        border: none;
+    }
+}
