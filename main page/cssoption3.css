@@ -82,6 +82,7 @@ header nav ul li.name img {
 section {
     border: 1px solid #ffedd1;
     width: 1920px;
+    height: 500px;
     background-color: #ffedd1;
 }
 
@@ -95,10 +96,9 @@ h1 {
     font-family: "Teko";
     font-size: 80pt;
     width: 404px;
-    height: 118px;
+    height: 100px;
     color: #72b0ab;
-    margin: 140px 758px 0px 758px;
-    align-content: end;
+    margin: 100px 758px 30px 758px;
     text-align: left;
 }
 
@@ -109,7 +109,7 @@ section p {
     width: 844px;
     height: 100px;
     text-align: center;
-    margin: 0px 538px 0px 538px;
+    margin: 0px 538px 30px 538px;
 
 
 }
@@ -119,7 +119,7 @@ section p.downlod a {
     height: 41px;
     background-color: #fe9179;
     padding: 7px;
-    margin: 20px 100px 0px 430px;
+    margin: 100px 100px 0px 430px;
     border-radius: 25px;
     text-decoration: none;
     font-family: "Teko";
@@ -134,7 +134,7 @@ section p.view a {
     height: 41px;
     background-color: #fe9179;
     padding: 7px;
-    margin: -100px 100px 0px 250px;
+    margin: -130px 100px 0px 250px;
     border-radius: 25px;
     text-decoration: none;
     font-family: "Teko";

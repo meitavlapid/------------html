@@ -78,11 +78,12 @@ header nav ul li.name img {
 section {
     border: 1px solid #ffedd1;
     width: 1920px;
+    height: 460px;
     background-color: #ffedd1;
 }
 
 section #top {
-    height: 460px;
+
     justify-content: center;
     display: flex;
 }
@@ -93,8 +94,8 @@ section h1 {
     width: 404px;
     height: 118px;
     color: #72b0ab;
-    margin: 140px 758px 0px 758px;
-    align-content: end;
+    margin: 50px 758px 0px 758px;
+
     text-align: center;
 }
 
@@ -114,7 +115,7 @@ section p.downlod a {
     height: 41px;
     background-color: #fe9179;
     padding: 7px;
-    margin: 20px 100px 0px 430px;
+    margin: 100px 100px 0px 430px;
     border-radius: 25px;
     text-decoration: none;
     font-family: "Teko";
@@ -168,8 +169,9 @@ div#letusbox {
 }
 
 div.box img {
-    width: 29vw;
-    height: 39vh;
+    width: 25vw;
+    height: 25vh;
+    object-fit: contain;
     background: #E5EEFF;
     box-shadow: 0 0 20px 10px #00000066;
 }

@@ -78,11 +78,12 @@ header nav ul li.name img {
 section {
     border: 1px solid #ffedd1;
     width: 1920px;
+    height: 450px;
     background-color: #ffedd1;
 }
 
 section #top {
-    height: 460px;
+
     justify-content: center;
     display: flex;
 }
@@ -93,7 +94,7 @@ section h1 {
     width: 404px;
     height: 118px;
     color: #72b0ab;
-    margin: 140px 758px 0px 758px;
+    margin: 40px 758px 0px 758px;
     align-content: end;
     text-align: center;
 }

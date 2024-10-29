@@ -78,6 +78,7 @@ header nav ul li.name img {
 section {
     border: 1px solid #ffedd1;
     width: 1920px;
+    height: 480px;
     background-color: #ffedd1;
 }
 
@@ -91,10 +92,9 @@ section h1 {
     font-family: "Teko", serif;
     font-size: 80pt;
     width: 404px;
-    height: 118px;
+    height: 100px;
     color: #72b0ab;
-    margin: 140px 758px 0px 758px;
-    align-content: end;
+    margin: 90px 758px 5px 758px;
     text-align: center;
 }
 
@@ -105,7 +105,7 @@ section p {
     width: 844px;
     height: 100px;
     text-align: center;
-    margin: 0px 538px 0px 538px;
+    margin: 50px 538px 0px 538px;
 
 }
 
@@ -114,7 +114,7 @@ section p.downlod a {
     height: 41px;
     background-color: #fe9179;
     padding: 7px;
-    margin: 20px 100px 0px 430px;
+    margin: 40px 0px 0px 430px;
     border-radius: 25px;
     text-decoration: none;
     font-family: "Teko";
@@ -129,7 +129,7 @@ section p.view a {
     height: 41px;
     background-color: #fe9179;
     padding: 7px;
-    margin: -100px 100px 0px 250px;
+    margin: -150px 0px 0px 250px;
     border-radius: 25px;
     text-decoration: none;
     font-family: "Teko";
@@ -144,7 +144,7 @@ div.techIcons {
     width: 1920px;
     height: 130px;
     padding: 10px;
-    box-shadow: 0px 05px 20px inset #fe9179;
+    box-shadow: 0px 5px 20px inset #fe9179;
     background-color: #fdc1b4;
     display: flex;
     justify-content: center;

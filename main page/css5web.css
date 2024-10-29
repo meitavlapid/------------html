@@ -117,7 +117,7 @@ div.box1 p {
     font-weight: 400;
     font-size: 1.5em;
     color: #F9F9F9;
-    top: 60%;
+    top: 55%;
     align-content: center;
     position: absolute;
     text-align: center;
@@ -173,7 +173,7 @@ form.tellus h1 {
 
 @media (760px <=width <=1300px) {
     form.tellus h1 {
-
+        margin-top: 5vh;
         font-size: 1.9em;
     }
 }
@@ -185,9 +185,9 @@ form.tellus h1 {
         font-family: "Assistant", sans-serif;
         font-weight: 700;
         color: #FFFFFF;
-        font-size: 1.6em;
+        font-size: 1.2em;
         text-align: center;
-        margin-top: 5vh;
+        margin-top: 1vh;
 
     }
 }

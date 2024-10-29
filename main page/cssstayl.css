@@ -16,7 +16,7 @@ body {
     height: 1000%;
 }
 
-header nav {
+header {
     width: 100%;
     height: 100%;
     margin: 0;
@@ -29,7 +29,7 @@ header nav {
 }
 
 @media (300px <=width <=760px) {
-    header nav {
+    header {
         width: 100%;
         height: 100%;
         margin: 0;
@@ -42,130 +42,78 @@ header nav {
     }
 }
 
-header nav div.hmborger {
+#menu-mob {
+    display: none;
+}
+
+#hamburger {
     display: none;
 }
 
 @media (300px <=width <=760px) {
-    header nav div.hmborger {
+    #hamburger {
         display: block;
-        padding-left: 4vw;
-        width: 100%;
-        height: 30%;
+        margin-left: 5vw;
     }
 
-    /* .bar { */
-    /* display: block; */
-    /* width: 25px; */
-    /* height: 3px; */
-    /* margin: 5px; */
-    /* -webkit-transition: all 0.3s ease-in-out; */
-    /* transition: all 0.3s ease-in-out; */
-    /* background-color: #101010; */
-    /* } */
-
-}
-
-@media (300px <=width <=760px) {
-    header nav div.hmborger:hover {
-        width: 100%;
-        height: auto;
+    #menu-mob input:checked~#navbar {
         display: block;
-        overflow: hidden;
     }
 
-    header nav div.hmborger:hover+ul {
-        display: flex;
-        position: relative;
-        width: 100%;
-        height: auto;
-        color: #000;
+    nav.nav {
+        display: none;
         flex-direction: column;
-        background-color: #fdc1b4;
+        padding-top: 0;
+        width: 100%;
+        height: auto;
+        font-family: "Teko", sans-serif;
+        font-size: 1rem;
+        color: #355e58;
+        text-align: center;
+        text-decoration: none;
+    }
 
+    nav a {
+        align-items: center;
+    }
+
+    nav img {
+        display: none;
     }
 }
 
-header nav ul {
+header nav {
     display: flex;
     position: relative;
+    width: 100%;
+    height: auto;
 }
 
-@media (300px <=width <=760px) {
-    header nav ul {
-        display: none;
-        /* position: relative; */
-        /* left: -10%; */
-        /* top: 5rem; */
-        /* flex-direction: column; */
-        /* width: 100%; */
-        /* border-radius: 10px; */
-        /* text-align: left; */
-    }
-}
-
-header nav ul li {
-    float: left;
-    list-style-type: none;
+header nav a {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
     font-family: "Teko", sans-serif;
+    font-size: 1.7rem;
+    color: #355e58;
     text-align: center;
+    text-decoration: none;
+    align-items: center;
+    margin-left: 5vw;
 }
 
-@media (300px <=width <=760px) {}
-
-header nav ul li.main {
-    width: 2vw;
-    height: 7vh;
-    padding: 2vh 0vh 0vh 10vw;
-    color: #ffedd1;
-}
-
-@media (300px <=width <=760px) {}
-
-header nav ul li.about {
-    width: 2vw;
-    height: 7vh;
-    padding: 2vh 0vh 0vh 15vw;
-}
-
-@media (300px <=width <=760px) {}
-
-header nav ul li.gallery {
-    width: 2vw;
-    height: 7vh;
-    padding: 2vh 0vh 0vh 15vw;
-}
-
-@media (300px <=width <=760px) {}
-
-header nav ul li.contact {
-    width: 2vw;
-    height: 7vh;
-    padding: 2vh 0vh 0vh 15vw;
-}
-
-@media (300px <=width <=760px) {}
-
-header nav ul li.profile img {
+header nav img.profile {
     width: 6vw;
     height: 6vh;
-    position: relative;
-    top: 0.2vh;
-    left: 25vw;
     border-radius: 31px;
+    margin-left: 30vw;
 }
 
-@media (300px <=width <=760px) {}
-
-header nav ul li.name img {
+header nav img.name {
     width: 6vw;
     height: 5vh;
-    left: 25vw;
-    position: relative;
-
 }
-
-@media (300px <=width <=760px) {}
 
 section#top {
     width: 100%;
@@ -181,22 +129,21 @@ section#top {
         font-family: "Teko", sans-serif;
         font-size: 3em;
         width: 100%;
-        height: 40%;
+        height: 10%;
+        margin-top: 2vh;
         color: #72b0ab;
         align-content: center;
         text-align: center;
-        border: 1px solid #000;
         position: absolute;
     }
 
     p {
-        width: 80%;
-        height: 40%;
-        margin-top: 9%;
+        width: 75%;
+        height: 10%;
+        margin-top: 10vh;
         font-family: "Teko", sans-serif;
         font-size: 1.5rem;
         color: #72b0ab;
-        border: 1px solid #000;
         text-align: center;
         align-content: center;
         position: relative;
@@ -209,31 +156,28 @@ section#top {
         height: 30%;
         justify-content: center;
         display: flex;
-        margin: 100vh;
         background-color: #ffedd1;
         border: 1px solid #ffedd1;
         position: absolute;
 
         h1 {
             font-family: "Teko", sans-serif;
-            font-size: 3em;
+            font-size: 1.7em;
             width: 100%;
             height: 40%;
             color: #72b0ab;
             align-content: center;
             text-align: center;
-            border: 1px solid #000;
             position: absolute;
         }
 
         p {
-            width: 80%;
+            width: 85%;
             height: 40%;
-            margin-top: 9%;
+            margin-top: 10vh;
             font-family: "Teko", sans-serif;
-            font-size: 1.5rem;
+            font-size: 0.7em;
             color: #72b0ab;
-            border: 1px solid #000;
             text-align: center;
             align-content: center;
             position: relative;
@@ -258,7 +202,11 @@ div.techIcons {
     }
 }
 
-@media (300px <=width <=760px) {}
+@media (300px <=width <=760px) {
+    div.techIcons {
+        margin-top: 28vh;
+    }
+}
 
 div#mesection {
     width: 100%;
@@ -305,7 +253,7 @@ div#mesection {
     p.reseme a {
         text-decoration: none;
         font-size: 1.1em;
-        color: #ffedd1;
+        color: #fdc1b4;
 
 
     }
@@ -315,23 +263,74 @@ div#mesection {
         height: 15%;
         margin: 40vh 70vw 0vh 0;
         padding-top: 2vh;
-        border-radius: 100%;
+        border-radius: 10%;
         background: #fe9179;
         text-decoration: none;
         font-family: "Teko", sans-serif;
         font-weight: 700;
         text-align: center;
-        color: #ffedd1;
         position: absolute;
-        box-shadow: 0 0 50px 5px inset #355e58;
+        box-shadow: 0 0 5px 5px #fdc1b4;
+        color: #fdc1b4;
     }
 }
 
-@media (300px <=width <=760px) {}
+@media (300px <=width <=760px) {
+    div#mesection {
+        width: 100%;
+        height: 37%;
+        background-color: #0532299d;
+        display: flex;
+        position: absolute;
+        margin: 0%;
+        justify-content: center;
+
+
+        img.profilepic2 {
+            width: 12%;
+            height: 15%;
+            margin-top: 1vh;
+        }
+
+        h1.headlien {
+            width: 100%;
+            height: 10%;
+            margin-top: 7vh;
+            font-size: 1.5em;
+        }
+
+        p.aboutme {
+            width: 80%;
+            height: 30%;
+            font-size: 0.7em;
+            margin-top: 12vh;
+            position: absolute;
+        }
+
+        p.reseme a {
+            text-decoration: none;
+            font-size: 0.6em;
+            color: #ffedd1;
+            text-align: center;
+        }
+
+        p.reseme {
+            width: 20%;
+            height: 15%;
+            margin: 30vh 70vw 0vh 0;
+            padding-top: 0.5vh;
+            border-radius: 25%;
+            background: #fe9179;
+            color: #ffedd1;
+            position: absolute;
+            box-shadow: 0 0 5px 5px inset #fdc1b4;
+        }
+    }
+}
 
 div#container {
     width: 100%;
-    height: 50%;
+    height: auto;
     font-family: "Teko", sans-serif;
     background: #ffedd1;
     display: grid;
@@ -343,7 +342,20 @@ div#container {
     padding: 3% 5% 10% 5%;
 }
 
-@media (300px <=width <=760px) {}
+@media (300px <=width <=760px) {
+    div#container {
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        top: 37vh;
+        justify-content: center;
+        align-content: center;
+        padding: 1% 5% 10% 5%;
+        position: relative;
+        gap: 1.8vh;
+    }
+}
 
 div#container h1.container1 {
     width: 100%;
@@ -360,7 +372,19 @@ div#container h1.container1 {
     position: relative;
 }
 
-@media (300px <=width <=760px) {}
+@media (300px <=width <=760px) {
+    div#container h1.container1 {
+        width: 100%;
+        height: 4%;
+        grid-row: 1 / 2;
+        grid-column: 1 / 1;
+        justify-items: center;
+        text-align: center;
+        color: #72b0ab;
+        font-size: 1.9em;
+        padding: 4%;
+    }
+}
 
 div#container p.container2 {
     width: 60%;
@@ -378,7 +402,20 @@ div#container p.container2 {
     margin-left: 20%;
 }
 
-@media (300px <=width <=760px) {}
+@media (300px <=width <=760px) {
+    div#container p.container2 {
+        width: 100%;
+        height: 4%;
+        font-size: 0.8em;
+        justify-content: center;
+        text-align: center;
+        grid-row: 1 /2;
+        grid-column: 1 / 2;
+        padding-top: 31%;
+        margin: 0;
+
+    }
+}
 
 div#container h1 {
     width: 100%;
@@ -394,7 +431,6 @@ div#container h1 {
     margin-left: 13%;
 }
 
-@media (300px <=width <=760px) {}
 
 div#container p {
     font-family: "Teko", sans-serif;
@@ -408,7 +444,6 @@ div#container p {
     margin-left: 13%;
 }
 
-@media (300px <=width <=760px) {}
 
 div#container img {
     width: 90%;
@@ -419,11 +454,8 @@ div#container img {
     position: relative;
     border-radius: 15%;
     box-shadow: 0 0 15px 5px #ffedd1;
-    /* box-shadow: 0 0 10px 5px #355e58; */
-    /*  */
 }
 
-@media (300px <=width <=760px) {}
 
 div#container a {
     width: 20%;
@@ -443,7 +475,6 @@ div#container a {
     position: absolute;
 }
 
-@media (300px <=width <=760px) {}
 
 div .itemproject1 {
     width: 100%;
@@ -458,8 +489,6 @@ div .itemproject1 {
     box-shadow: 0 0 30px 10px #00000066;
 }
 
-@media (300px <=width <=760px) {}
-
 div .itemproject2 {
     width: 100%;
     height: 100%;
@@ -473,7 +502,6 @@ div .itemproject2 {
     box-shadow: 0 0 30px 10px #00000066;
 }
 
-@media (300px <=width <=760px) {}
 
 div .itemproject3 {
     width: 100%;
@@ -488,7 +516,6 @@ div .itemproject3 {
     box-shadow: 0 0 30px 10px #00000066;
 }
 
-@media (300px <=width <=760px) {}
 
 div .itemproject4 {
     width: 100%;
@@ -503,7 +530,6 @@ div .itemproject4 {
     box-shadow: 0 0 30px 10px #00000066;
 }
 
-@media (300px <=width <=760px) {}
 
 div .itemproject5 {
     width: 100%;
@@ -518,7 +544,6 @@ div .itemproject5 {
     box-shadow: 0 0 30px 10px #00000066;
 }
 
-@media (300px <=width <=760px) {}
 
 div .itemproject6 {
     width: 100%;
@@ -533,7 +558,6 @@ div .itemproject6 {
     box-shadow: 0 0 30px 10px #00000066;
 }
 
-@media (300px <=width <=760px) {}
 
 div .itemproject7 {
     width: 100%;
@@ -548,7 +572,45 @@ div .itemproject7 {
     box-shadow: 0 0 30px 10px #00000066;
 }
 
-@media (300px <=width <=760px) {}
+@media (300px <=width <=760px) {
+    div .itemproject1 {
+        grid-row: 2/3;
+        grid-column: 1/2;
+
+    }
+
+    div .itemproject2 {
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+
+    div .itemproject3 {
+        grid-row: 4/5;
+        grid-column: 1/2;
+    }
+
+    div .itemproject4 {
+        grid-row: 5/6;
+        grid-column: 1/2;
+    }
+
+    div .itemproject5 {
+        grid-row: 6/7;
+        grid-column: 1/2;
+    }
+
+    div .itemproject6 {
+        grid-row: 7/8;
+        grid-column: 1/2;
+    }
+
+    div .itemproject7 {
+        grid-row: 8/9;
+        grid-column: 1/2;
+    }
+
+}
+
 
 div#formbox {
     width: 100%;
@@ -560,7 +622,12 @@ div#formbox {
     padding: 0;
 }
 
-@media (300px <=width <=760px) {}
+@media (300px <=width <=760px) {
+    div#formbox {
+        height: 45%;
+        margin-top: 37vh;
+    }
+}
 
 div#formbox h1 {
     font-family: "Teko", sans-serif;
@@ -575,30 +642,27 @@ div#formbox h1 {
 
 }
 
-@media (300px <=width <=760px) {}
-
-div#formbox p {
-    font-family: "Teko", sans-serif;
-    font-size: 1em;
-    color: #ffedd1;
-    width: 70%;
-    height: 25%;
-    padding: 0;
-    text-align: left;
-    position: relative;
+@media (300px <=width <=760px) {
+    div#formbox h1 {
+        font-size: 2em;
+    }
 }
-
-@media (300px <=width <=760px) {}
 
 div img.formimg {
     width: 35%;
     margin: 0;
-    flex-direction: column-reverse;
     position: absolute;
     padding-left: 0%;
 }
 
-@media (300px <=width <=760px) {}
+@media (300px <=width <=760px) {
+    div img.formimg {
+        width: 35%;
+        margin: 0vh 55vw;
+        position: absolute;
+        padding-left: 0%;
+    }
+}
 
 div#formbox form.theform {
     width: 45%;
@@ -613,7 +677,14 @@ div#formbox form.theform {
     margin-left: 13%;
 }
 
-@media (300px <=width <=760px) {}
+@media (300px <=width <=760px) {
+    div#formbox form.theform {
+        width: 90%;
+        height: 90%;
+        font-size: 0.7em;
+        position: absolute;
+    }
+}
 
 div form input[type="text"] {
     font-family: "Teko", sans-serif;
@@ -625,7 +696,6 @@ div form input[type="text"] {
 
 }
 
-@media (300px <=width <=760px) {}
 
 div form textarea {
     font-family: "Teko", sans-serif;
@@ -637,7 +707,6 @@ div form textarea {
     resize: none;
 }
 
-@media (300px <=width <=760px) {}
 
 div form input[type="email"] {
     font-family: "Teko", sans-serif;
@@ -648,7 +717,6 @@ div form input[type="email"] {
     border-bottom: 6px solid #fdc1b4;
 }
 
-@media (300px <=width <=760px) {}
 
 div form input[type="tel"] {
     font-family: "Teko", sans-serif;
@@ -659,7 +727,6 @@ div form input[type="tel"] {
     border-bottom: 6px solid #fdc1b4;
 }
 
-@media (300px <=width <=760px) {}
 
 div form input[type="submit"] {
     font-family: "Teko", sans-serif;
@@ -671,7 +738,6 @@ div form input[type="submit"] {
     border: none;
 }
 
-@media (300px <=width <=760px) {}
 
 div#contact {
     width: 100%;
@@ -686,7 +752,29 @@ div#contact {
 
 }
 
-@media (300px <=width <=760px) {}
+@media (300px <=width <=760px) {
+    div#contact {
+        width: 100%;
+        height: 50%;
+        background: #fdc1b4;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        margin-top: 82vh;
+        padding: 2vh;
+    }
+
+    div#contact img {
+        width: 7%;
+        height: 50%;
+        object-fit: fill;
+        margin-top: -1%;
+        justify-items: left;
+    }
+
+}
 
 div.facebook img {
     width: 30%;
@@ -694,8 +782,6 @@ div.facebook img {
     object-fit: contain;
     margin-top: 35%;
 }
-
-@media (300px <=width <=760px) {}
 
 div.facebook figcaption {
     width: 100%;
@@ -705,7 +791,6 @@ div.facebook figcaption {
     font-size: 1.1em;
 }
 
-@media (300px <=width <=760px) {}
 
 /*  */
 /* div.linkedin img { */
@@ -729,7 +814,6 @@ div.Phone img {
     margin-top: 35%;
 }
 
-@media (300px <=width <=760px) {}
 
 div.Phone figcaption {
     width: 100%;
@@ -739,7 +823,6 @@ div.Phone figcaption {
     font-size: 1.1em;
 }
 
-@media (300px <=width <=760px) {}
 
 div.whatsapp img {
     width: 30%;
@@ -748,7 +831,6 @@ div.whatsapp img {
     margin-top: 35%;
 }
 
-@media (300px <=width <=760px) {}
 
 div.whatsapp figcaption {
     width: 100%;
@@ -758,7 +840,6 @@ div.whatsapp figcaption {
     font-size: 1.1em;
 }
 
-@media (300px <=width <=760px) {}
 
 div.email img {
     width: 30%;
@@ -767,7 +848,6 @@ div.email img {
     margin-top: 20%;
 }
 
-@media (300px <=width <=760px) {}
 
 div.email figcaption {
     width: 100%;
@@ -777,7 +857,6 @@ div.email figcaption {
     font-size: 1.1em;
 }
 
-@media (300px <=width <=760px) {}
 
 div.location img {
     width: 30%;
@@ -786,7 +865,6 @@ div.location img {
     margin-top: 40%;
 }
 
-@media (300px <=width <=760px) {}
 
 div.location figcaption {
     width: 100%;
@@ -796,7 +874,6 @@ div.location figcaption {
     font-size: 1.1em;
 }
 
-@media (300px <=width <=760px) {}
 
 footer {
     width: 100%;
@@ -811,7 +888,21 @@ footer {
     margin-bottom: 2%;
 }
 
-@media (300px <=width <=760px) {}
+@media (300px <=width <=760px) {
+    footer {
+        width: 100%;
+        height: 5vh;
+        text-align: left;
+        background: #355e58;
+        font-family: "Teko", sans-serif;
+        font-size: 1.3em;
+        padding: 2%;
+        border: none;
+        box-shadow: 0px 7px 10px #fdc1b4;
+        margin-bottom: 2vh;
+        margin-top: 132vh;
+    }
+}
 
 footer p.botoomname {
     color: #fdc1b4;
