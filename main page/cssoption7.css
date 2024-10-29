@@ -75,6 +75,13 @@ header nav ul li.name img {
     margin: 7px 200px 8px -400px;
 }
 
+header nav ul li a {
+    width: 100px;
+    height: 60px;
+    margin: 7px 200px 8px -400px;
+    position: absolute;
+}
+
 section {
     border: 1px solid #ffedd1;
     width: 1920px;
