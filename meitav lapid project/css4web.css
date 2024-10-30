@@ -69,7 +69,6 @@ div form.letusform p {
         height: 8vh;
         width: 100vw;
         text-align: center;
-
     }
 }
 
@@ -87,7 +86,6 @@ div.gradedbgp img {
         height: vh;
         margin: 0;
         clip-path: polygon(50% 70%, 100% 50%, 100% 0, 0 0, 0 50%);
-
     }
 }
 
@@ -98,8 +96,6 @@ div form.letusform {
     text-align: left;
     color: #b89d47;
     position: absolute;
-
-
 }
 
 @media (300px <=width <=760px) {
@@ -110,8 +106,6 @@ div form.letusform {
         text-align: left;
         color: #b89d47;
         position: absolute;
-
-
     }
 }
 
@@ -163,8 +157,6 @@ div form div.email {
     margin-top: 10vh;
     left: 45vw;
     position: absolute;
-    /* flex-direction: row; */
-
 }
 
 @media (300px <=width <=760px) {
@@ -174,8 +166,6 @@ div form div.email {
         margin-top: 34vh;
         left: 10vw;
         position: absolute;
-        /* flex-direction: row; */
-
     }
 }
 
@@ -190,6 +180,7 @@ div form input[type="email"] {
 
 }
 
+
 @media (300px <=width <=760px) {
     div form input[type="email"] {
         width: 80vw;
@@ -199,17 +190,41 @@ div form input[type="email"] {
         border: none;
         border-bottom: 5px solid #b89d47;
         background-color: #b89e4720;
-
     }
 }
 
 div form div.send {
     width: 13vw;
-    height: 6vh;
+    height: auto;
     left: 72vw;
     margin-block-start: 11.9vh;
     font-size: 1em;
-    position: absolute;
+    position: relative;
+    border: 1px solid #b89e47;
+
+}
+
+@media (760px <=width <=1000px) {
+    div form div.send {
+        width: 13vw;
+        height: 4vh;
+        left: 72vw;
+        top: -0.2vh;
+        font-size: 1em;
+        position: relative;
+        border: 1px solid #b89e47;
+    }
+
+    div form input[type="submit"] {
+        width: 13vw;
+        height: 4vh;
+        left: 77vw;
+        font-size: 1em;
+        color: #ecda91;
+        border: none;
+        background-color: #b89e47;
+    }
+
 }
 
 @media (300px <=width <=760px) {
@@ -220,6 +235,7 @@ div form div.send {
         margin-top: 43vh;
         font-size: 1em;
         position: absolute;
+        bottom: auto;
     }
 }
 

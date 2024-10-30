@@ -38,13 +38,13 @@ div.gradedbgp h1 {
     font-family: "Pacifico";
     font-size: 7em;
     color: #b89d47;
-    width: 100vw;
-    height: 7vh;
+    width: 100%;
+    height: 10%;
     margin: 0;
     text-align: center;
     justify-content: center;
     position: absolute;
-    top: 29vh;
+    top: 20%;
 }
 
 @media (max-width: 760px) {
@@ -52,7 +52,7 @@ div.gradedbgp h1 {
         font-family: "Pacifico";
         font-size: 9em;
         color: #b89d47;
-        width: 100vw;
+        width: 100%;
         height: 10vh;
         margin: 0;
         text-align: center;
@@ -67,14 +67,14 @@ div.gradedbgp h2 {
     font-family: "Teko", sans-serif;
     font-size: 1.6em;
     color: #b89d47;
-    width: 100vw;
-    height: 6vh;
+    width: 100%;
+    height: 10%;
     margin: 0 auto;
     text-align: center;
     align-items: center;
     justify-items: center;
     position: absolute;
-    top: 48vh;
+    top: 48%;
 }
 
 @media (max-width: 760px) {
@@ -98,14 +98,14 @@ div.gradedbgp p {
     font-family: "Teko";
     font-size: 1.5em;
     color: #b89d47;
-    width: 100vw;
-    height: 10vh;
+    width: 100%;
+    height: 10%;
     margin: 0 auto;
     text-align: center;
     align-items: center;
     justify-items: center;
     position: absolute;
-    top: 55vh;
+    top: 55%;
 
 }
 
@@ -131,16 +131,16 @@ div form.letusform {
     font-size: 1.5em;
     font-style: bold;
     color: #b89d47;
-    width: 35vw;
-    height: 15vh;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    gap: 0% 3%;
+    justify-self: center;
+    align-items: center;
+    top: -35vh;
     margin: 0;
-
-    justify-items: center;
-    position: fixed;
-    top: 63vh;
-    left: 32.5vw;
-    position: fixed;
-
 }
 
 @media (max-width: 760px) {
@@ -149,90 +149,92 @@ div form.letusform {
         font-size: 5em;
         font-style: bold;
         color: #b89d47;
-        width: 100vw;
-        height: 50vh;
-        position: fixed;
-        top: 50vh;
-        left: 0vw;
-
+        width: 100%;
+        height: 50%;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        top: -50vh;
+        padding-left: 20%;
+        gap: 0% 20%;
     }
 }
 
 div form div.fullname {
-    width: 13.5vw;
-    height: 7vh;
+    width: 100%;
+    height: 50%;
     font-family: "Teko";
-    font-size: 0.7em;
-    margin: 0;
+    font-size: 1.1em;
+
     text-align: left;
-    position: absolute;
-    left: 0vw;
-    align-content: start;
+
+
 }
 
 @media (max-width: 760px) {
     div form div.fullname {
-        width: 70vw;
-        height: 4vh;
-        left: 15vw;
+        width: 100%;
+        height: auto;
+
+
 
     }
 }
 
 div form input[type="text"] {
-    width: 13.5vw;
-    height: 6vh;
+    width: 100%;
+    height: 50%;
     font-family: "Teko";
-    font-size: 1em;
-    align-content: start;
+    font-size: 1.1em;
     border-color: #b89d47;
     background-color: rgba(245, 222, 179, 0);
+
 }
 
 @media (max-width: 760px) {
     div form input[type="text"] {
-        width: 70vw;
-        height: 6vh;
+        width: 80%;
+        height: 50%;
         font-family: "Teko";
         border-color: #b89d47;
         background-color: rgba(245, 222, 179, 0);
+
     }
 }
 
 div form div.email {
-    width: 13.5vw;
-    height: 7vh;
-    font-size: 0.7em;
-    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 1.1em;
     text-align: left;
-    position: absolute;
-    left: 14.5vw;
-    align-content: start;
+
+    /* left: 14.5vw; */
 }
 
 @media (max-width: 760px) {
     div form div.email {
-        width: 70vw;
-        height: 4vh;
-        top: 12vh;
-        left: 15vw;
+        width: 100%;
+        height: auto;
+
+
     }
 }
 
 div form input[type="email"] {
-    width: 13.5vw;
-    height: 6vh;
+    width: 100%;
+    height: 60%;
     font-family: "Teko";
-    font-size: 1em;
+    font-size: 1.1em;
     border-color: #b89d47;
     background-color: rgba(245, 222, 179, 0);
-    align-content: start;
+    align-self: flex-end;
+
 }
 
 @media (max-width: 760px) {
     div form input[type="email"] {
-        width: 70vw;
-        height: 6vh;
+        width: 80%;
+        height: 50%;
         font-family: "Teko";
         font-size: 1em;
         border-color: #b89d47;
@@ -242,28 +244,28 @@ div form input[type="email"] {
 }
 
 div form div.send {
-    width: 9vw;
-    height: 13vh;
-    margin: 0;
-    position: absolute;
-    left: 29vw;
-    padding: 2.4vh 0vw;
+    width: 60%;
+    height: 60%;
+    padding-top: 0vh;
+
+    position: relative;
+    /* align-self: center; */
+
 }
 
 @media (max-width: 760px) {
     div form div.send {
-        width: 70vw;
-        height: 4vh;
-        top: 25vh;
-        left: 15vw;
+        width: 80%;
+        height: 50%;
+        right: 8vw;
     }
 }
 
 div form input[type="submit"] {
-    width: 9vw;
-    height: 6vh;
+    width: 100%;
+    height: 60%;
     font-family: "Teko";
-    font-size: 0.6em;
+    font-size: 1.3em;
     color: white;
     background-color: #b89d47;
     border: none;
@@ -274,14 +276,15 @@ div form input[type="submit"] {
 
 @media (max-width: 760px) {
     div form input[type="submit"] {
-        width: 70vw;
-        height: 6vh;
+        width: 100%;
+        height: auto;
         font-family: "Teko";
-        font-size: 0.7em;
+        font-size: 1em;
         color: white;
         background-color: #b89d47;
         border: none;
         text-align: center;
+
     }
 
 }

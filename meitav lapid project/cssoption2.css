@@ -1,0 +1,232 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.teko {
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+@media (300px <=width <=760px) {
+    body {
+        font-size: 50%;
+    }
+}
+
+header {
+    width: 100%;
+    height: auto;
+    top: 0;
+    right: 0;
+    font-family: "Teko", sans-serif;
+    color: #355e58;
+    font-size: 1.7rem;
+    background-color: #fdc1b4;
+    display: flex;
+    position: sticky;
+    z-index: 10;
+    box-shadow: 0px 05px 20px inset #fe9179;
+}
+
+@media (300px <=width <=760px) {
+    header {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        font-family: "Teko", sans-serif;
+        color: #355e58;
+        font-size: 0.9em;
+        background-color: #fdc1b4;
+        position: sticky;
+        box-shadow: 0px 05px 20px inset #fe9179;
+    }
+}
+
+header nav {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+header nav a {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-family: "Teko", sans-serif;
+    font-size: 1.7rem;
+    color: #355e58;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    margin-left: 5vw;
+    padding: 2%;
+}
+
+@media (300px <=width <=760px) {
+    header nav a {
+
+        font-size: 0.9rem;
+
+    }
+}
+
+header nav a.main {
+
+    color: #ffedd1;
+
+}
+
+header nav img.profile {
+    width: 6%;
+    height: auto;
+    border-radius: 31px;
+    right: 10%;
+    position: sticky;
+    object-fit: contain;
+}
+
+header nav a.name {
+    width: 13%;
+    height: 100%;
+    position: absolute;
+    right: 0%;
+    z-index: 21;
+
+}
+
+header nav img.name {
+    width: 8%;
+    height: auto;
+    right: 2%;
+    position: sticky;
+}
+
+section {
+    display: flex;
+    position: relative;
+    border: 1px solid #ffedd1;
+    width: 100%;
+    height: auto;
+    background-color: #ffedd1;
+    padding: 2%;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+
+section h1 {
+    font-family: "Teko", serif;
+    font-size: 6em;
+    width: 100%;
+    height: 5%;
+    color: #72b0ab;
+    text-align: center;
+}
+
+section p {
+    font-family: "Teko", serif;
+    font-size: 2em;
+    color: #72b0ab;
+    width: 70%;
+    height: 10%;
+    text-align: center;
+    align-items: center;
+
+}
+
+section p.downlod a {
+    width: 10vw;
+    height: 5vh;
+    background-color: #fe9179;
+    border-radius: 25%;
+    text-decoration: none;
+    font-family: "Teko";
+    font-size: 0.8em;
+    text-align: center;
+    color: #ffedd1;
+    padding: 1vh;
+}
+
+section p.view a {
+    width: 11vw;
+    height: 5vh;
+    background-color: #fe9179;
+    padding: 1vh;
+    border-radius: 25%;
+    text-decoration: none;
+    font-family: "Teko";
+    font-size: 0.8em;
+    text-align: center;
+    color: #ffedd1;
+}
+
+div.techIcons {
+    width: 100%;
+    height: auto;
+
+    box-shadow: 0px 5px 20px inset #fe9179;
+    background-color: #fdc1b4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div.techIcons img {
+    width: 8%;
+    height: 8%;
+    object-fit: contain;
+}
+
+div#letusbox {
+    width: 100%;
+    height: auto;
+    padding: 10%;
+    background: #ffedd1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+div.box img {
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+    box-shadow: 0 0 20px 10px #00000066;
+
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #355e58;
+    font-family: "Teko", serif;
+    font-size: 1.5em;
+    color: #fdc1b4;
+    box-shadow: 0px 7px 10px;
+    margin: 0px 0px 5px 0px;
+
+}
+
+footer p {
+    margin: 0px 0px 0px 30px;
+}
