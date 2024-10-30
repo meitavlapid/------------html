@@ -18,67 +18,30 @@ body {
 
 header {
     width: 100%;
-    height: 100%;
-    margin: 0;
+    height: auto;
+    top: 0;
+    right: 0;
     font-family: "Teko", sans-serif;
     color: #355e58;
     font-size: 1.7rem;
     background-color: #fdc1b4;
+    display: flex;
     position: sticky;
+    z-index: 10;
     box-shadow: 0px 05px 20px inset #fe9179;
 }
 
-@media (300px <=width <=760px) {
+@media (300px <=width <=800px) {
     header {
         width: 100%;
         height: 100%;
         margin: 0;
         font-family: "Teko", sans-serif;
         color: #355e58;
-        font-size: 1.7rem;
+        font-size: 1em;
         background-color: #fdc1b4;
         position: sticky;
         box-shadow: 0px 05px 20px inset #fe9179;
-    }
-}
-
-#menu-mob {
-    display: none;
-}
-
-#hamburger {
-    display: none;
-}
-
-@media (300px <=width <=760px) {
-    #hamburger {
-        display: block;
-        margin-left: 5vw;
-    }
-
-    #menu-mob input:checked~#navbar {
-        display: block;
-    }
-
-    nav.nav {
-        display: none;
-        flex-direction: column;
-        padding-top: 0;
-        width: 100%;
-        height: auto;
-        font-family: "Teko", sans-serif;
-        font-size: 1rem;
-        color: #355e58;
-        text-align: center;
-        text-decoration: none;
-    }
-
-    nav a {
-        align-items: center;
-    }
-
-    nav img {
-        display: none;
     }
 }
 
@@ -103,19 +66,42 @@ header nav a {
     margin-left: 5vw;
 }
 
-header nav img.profile {
-    width: 6vw;
-    height: 6vh;
-    border-radius: 31px;
-    margin-left: 30vw;
+@media (300px <=width <=800px) {
+    header nav a {
+        font-size: 0.9rem;
+    }
 }
+
+header nav img.profile {
+    width: 6%;
+    height: auto;
+    border-radius: 31px;
+    right: 10%;
+    position: sticky;
+    object-fit: contain;
+}
+
+header nav a.name {
+    width: 13%;
+    height: 100%;
+    position: absolute;
+    right: 0%;
+    z-index: 21;
+}
+
+header nav a.main {
+    color: #ffedd1;
+}
+
 
 header nav img.name {
-    width: 6vw;
-    height: 5vh;
+    width: 8%;
+    height: auto;
+    right: 2%;
+    position: sticky;
 }
 
-section#top {
+section#main {
     width: 100%;
     height: 30%;
     justify-content: center;
@@ -150,8 +136,8 @@ section#top {
     }
 }
 
-@media (300px <=width <=760px) {
-    section#top {
+@media (300px <=width <=800px) {
+    section#main {
         width: 100%;
         height: 30%;
         justify-content: center;
@@ -202,13 +188,13 @@ div.techIcons {
     }
 }
 
-@media (300px <=width <=760px) {
+@media (300px <=width <=800px) {
     div.techIcons {
         margin-top: 28vh;
     }
 }
 
-div#mesection {
+div#about {
     width: 100%;
     height: 50%;
     background-color: #0532299d;
@@ -275,8 +261,32 @@ div#mesection {
     }
 }
 
-@media (300px <=width <=760px) {
-    div#mesection {
+@media (800px <=width <=1080px) {
+    div#about {
+        p.reseme a {
+            text-decoration: none;
+            font-size: 1em;
+            color: #ffedd1;
+            text-align: center;
+        }
+
+        p.reseme {
+            width: 20%;
+            height: 15%;
+            margin: 40vh 70vw 0vh 0;
+            padding: 3%;
+            line-height: 88%;
+            border-radius: 25%;
+            background: #fe9179;
+            color: #ffedd1;
+            position: absolute;
+            box-shadow: 0 0 5px 5px inset #fdc1b4;
+        }
+    }
+}
+
+@media (300px <=width <=800px) {
+    div#about {
         width: 100%;
         height: 37%;
         background-color: #0532299d;
@@ -295,7 +305,7 @@ div#mesection {
         h1.headlien {
             width: 100%;
             height: 10%;
-            margin-top: 7vh;
+            margin-top: 5vh;
             font-size: 1.5em;
         }
 
@@ -303,7 +313,7 @@ div#mesection {
             width: 80%;
             height: 30%;
             font-size: 0.7em;
-            margin-top: 12vh;
+            margin-top: 10vh;
             position: absolute;
         }
 
@@ -318,7 +328,8 @@ div#mesection {
             width: 20%;
             height: 15%;
             margin: 30vh 70vw 0vh 0;
-            padding-top: 0.5vh;
+            padding: 3%;
+            line-height: 50%;
             border-radius: 25%;
             background: #fe9179;
             color: #ffedd1;
@@ -328,7 +339,7 @@ div#mesection {
     }
 }
 
-div#container {
+div#gallery {
     width: 100%;
     height: auto;
     font-family: "Teko", sans-serif;
@@ -342,8 +353,8 @@ div#container {
     padding: 3% 5% 10% 5%;
 }
 
-@media (300px <=width <=760px) {
-    div#container {
+@media (300px <=width <=800px) {
+    div#gallery {
         width: 100%;
         height: auto;
         grid-template-columns: repeat(1, 1fr);
@@ -357,7 +368,7 @@ div#container {
     }
 }
 
-div#container h1.container1 {
+div#gallery h1.container1 {
     width: 100%;
     height: 2%;
     grid-row: 1 / 2;
@@ -372,8 +383,25 @@ div#container h1.container1 {
     position: relative;
 }
 
-@media (300px <=width <=760px) {
-    div#container h1.container1 {
+@media (800px <=width <=1000px) {
+    div#gallery h1.container1 {
+        width: 100%;
+        height: 2%;
+        grid-row: 1 / 2;
+        grid-column: 1 / 4;
+        text-align: center;
+        font-family: "Teko", sans-serif;
+        color: #72b0ab;
+        font-size: 3em;
+        font-weight: 900;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+}
+
+@media (300px <=width <=800px) {
+    div#gallery h1.container1 {
         width: 100%;
         height: 4%;
         grid-row: 1 / 2;
@@ -386,7 +414,7 @@ div#container h1.container1 {
     }
 }
 
-div#container p.container2 {
+div#gallery p.container2 {
     width: 60%;
     height: 10%;
     font-family: "Teko", sans-serif;
@@ -400,10 +428,18 @@ div#container p.container2 {
     padding-top: 10%;
     margin: 0;
     margin-left: 20%;
+    margin-bottom: 2%;
 }
 
-@media (300px <=width <=760px) {
-    div#container p.container2 {
+@media (800px <=width <=1000px) {
+    div#gallery p.container2 {
+        font-size: 1.4em;
+        margin-bottom: 2%;
+    }
+}
+
+@media (300px <=width <=800px) {
+    div#gallery p.container2 {
         width: 100%;
         height: 4%;
         font-size: 0.8em;
@@ -417,7 +453,7 @@ div#container p.container2 {
     }
 }
 
-div#container h1 {
+div#gallery h1 {
     width: 100%;
     height: 13%;
     font-family: "Teko", sans-serif;
@@ -432,7 +468,7 @@ div#container h1 {
 }
 
 
-div#container p {
+div#gallery p {
     font-family: "Teko", sans-serif;
     font-size: 0.5em;
     width: 28%;
@@ -445,7 +481,7 @@ div#container p {
 }
 
 
-div#container img {
+div#gallery img {
     width: 90%;
     height: 40%;
     object-fit: fill;
@@ -457,7 +493,7 @@ div#container img {
 }
 
 
-div#container a {
+div#gallery a {
     width: 20%;
     height: 20%;
     font-size: 0.6em;
@@ -572,7 +608,7 @@ div .itemproject7 {
     box-shadow: 0 0 30px 10px #00000066;
 }
 
-@media (300px <=width <=760px) {
+@media (300px <=width <=800px) {
     div .itemproject1 {
         grid-row: 2/3;
         grid-column: 1/2;
@@ -614,17 +650,19 @@ div .itemproject7 {
 
 div#formbox {
     width: 100%;
-    height: 65%;
+    height: 80%;
     background: #355e58c4;
     display: flex;
     position: absolute;
     margin-top: 50vh;
     padding: 0;
+    padding-bottom: 10vh;
 }
 
-@media (300px <=width <=760px) {
+@media (300px <=width <=800px) {
     div#formbox {
-        height: 45%;
+        width: 100%;
+        height: 100%;
         margin-top: 37vh;
     }
 }
@@ -642,23 +680,23 @@ div#formbox h1 {
 
 }
 
-@media (300px <=width <=760px) {
+@media (300px <=width <=800px) {
     div#formbox h1 {
         font-size: 2em;
     }
 }
 
 div img.formimg {
-    width: 35%;
+    width: 30%;
     margin: 0;
     position: absolute;
     padding-left: 0%;
 }
 
-@media (300px <=width <=760px) {
+@media (300px <=width <=800px) {
     div img.formimg {
-        width: 35%;
-        margin: 0vh 55vw;
+        width: 25%;
+        margin: 0vh 70vw;
         position: absolute;
         padding-left: 0%;
     }
@@ -666,7 +704,7 @@ div img.formimg {
 
 div#formbox form.theform {
     width: 45%;
-    height: 60%;
+    height: 100%;
     font-family: "Teko", sans-serif;
     font-size: 1.1em;
     font-style: bold;
@@ -677,11 +715,11 @@ div#formbox form.theform {
     margin-left: 13%;
 }
 
-@media (300px <=width <=760px) {
+@media (300px <=width <=800px) {
     div#formbox form.theform {
         width: 90%;
-        height: 90%;
-        font-size: 0.7em;
+        height: auto;
+        font-size: 0.6em;
         position: absolute;
     }
 }
@@ -748,11 +786,11 @@ div#contact {
     flex-direction: row;
     justify-content: space-evenly;
     text-align: center;
-    margin-top: 110vh;
+    margin-top: 130vh;
 
 }
 
-@media (300px <=width <=760px) {
+@media (300px <=width <=800px) {
     div#contact {
         width: 100%;
         height: 50%;
@@ -770,7 +808,7 @@ div#contact {
         width: 7%;
         height: 50%;
         object-fit: fill;
-        margin-top: -1%;
+        margin-top: 0%;
         justify-items: left;
     }
 
@@ -888,7 +926,7 @@ footer {
     margin-bottom: 2%;
 }
 
-@media (300px <=width <=760px) {
+@media (300px <=width <=800px) {
     footer {
         width: 100%;
         height: 5vh;
