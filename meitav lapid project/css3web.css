@@ -1,32 +1,46 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .teko {
-    font-family: "Teko", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .pacifico-regular {
-    font-family: "Pacifico", cursive;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 div#letusbox {
-    width: 100vw;
-    height: 100vh;
-    margin: 0 auto;
-    display: flex;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
 }
 
 div form.letusform h1 {
+  font-family: "Teko";
+  font-size: 2.5em;
+  color: #ffedd1;
+  width: 22vw;
+  height: 10vh;
+  text-align: left;
+  position: relative;
+  margin: 0;
+  top: 10vh;
+  left: 7vw;
+}
+
+@media (760px <=width <=1200px) {
+  div form.letusform h1 {
     font-family: "Teko";
-    font-size: 2.5em;
+    font-size: 1.8em;
     color: #ffedd1;
     width: 22vw;
     height: 10vh;
@@ -35,113 +49,107 @@ div form.letusform h1 {
     margin: 0;
     top: 10vh;
     left: 7vw;
-
-}
-
-@media (760px <=width <=1200px) {
-    div form.letusform h1 {
-        font-family: "Teko";
-        font-size: 1.8em;
-        color: #ffedd1;
-        width: 22vw;
-        height: 10vh;
-        text-align: left;
-        position: relative;
-        margin: 0;
-        top: 10vh;
-        left: 7vw;
-
-    }
+  }
 }
 
 @media (300px <=width <=760px) {
-    div form.letusform h1 {
-        font-family: "Teko";
-        font-size: 2.1em;
-        color: #ffedd1;
-        width: 80vw;
-        height: 9vh;
-        text-align: left;
-        left: 10vw;
-        top: 5vh;
-
-    }
+  div form.letusform h1 {
+    font-family: "Teko";
+    font-size: 2.1em;
+    color: #ffedd1;
+    width: 80vw;
+    height: 9vh;
+    text-align: left;
+    left: 10vw;
+    top: 5vh;
+  }
 }
 
 form.letusform p {
+  font-family: "Teko";
+  font-size: 1.5em;
+  color: #ffedd1;
+  width: 22vw;
+  height: 4vh;
+  position: relative;
+  text-align: left;
+  margin: o;
+  top: 11vh;
+  left: 7vw;
+}
+
+@media (760px <=width <=1200px) {
+  form.letusform p {
     font-family: "Teko";
-    font-size: 1.5em;
+    font-size: 1em;
     color: #ffedd1;
     width: 22vw;
     height: 4vh;
     position: relative;
     text-align: left;
     margin: o;
-    top: 11vh;
+    top: 12vh;
     left: 7vw;
-}
-
-@media (760px <=width <=1200px) {
-    form.letusform p {
-        font-family: "Teko";
-        font-size: 1em;
-        color: #ffedd1;
-        width: 22vw;
-        height: 4vh;
-        position: relative;
-        text-align: left;
-        margin: o;
-        top: 12vh;
-        left: 7vw;
-    }
+  }
 }
 
 @media (300px <=width <=760px) {
-    form.letusform p {
-        font-family: "Teko";
-        font-size: 1em;
-        color: #ffedd1;
-        width: 80vw;
-        height: 10vh;
-        text-align: left;
-        top: 8vh;
-        left: 10vw;
-
-    }
+  form.letusform p {
+    font-family: "Teko";
+    font-size: 1em;
+    color: #ffedd1;
+    width: 80vw;
+    height: 10vh;
+    text-align: left;
+    top: 8vh;
+    left: 10vw;
+  }
 }
 
 div.coffee img {
+  width: 65vw;
+  height: 65vh;
+  object-fit: fill;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media (760px <=width <=1200px) {
+  div.coffee img {
     width: 65vw;
     height: 65vh;
     object-fit: fill;
     position: absolute;
     top: 0;
     right: 0;
-}
-
-@media (760px <=width <=1200px) {
-    div.coffee img {
-        width: 65vw;
-        height: 65vh;
-        object-fit: fill;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
+  }
 }
 
 @media (300px <=width <=760px) {
-    div.coffee img {
-        width: 100vw;
-        height: 35vh;
-        object-fit: fill;
-        display: block;
-        margin: 0;
-
-    }
+  div.coffee img {
+    width: 100vw;
+    height: 35vh;
+    object-fit: fill;
+    display: block;
+    margin: 0;
+  }
 }
 
 form.letusform {
+  width: 35vw;
+  height: 65vh;
+  margin: 0;
+  font-family: "Teko";
+  font-style: bold;
+  text-align: left;
+  color: #ffedd1;
+  position: relative;
+  background-color: #355e58b5;
+}
+
+@media (760px <=width <=1200px) {
+  form.letusform {
     width: 35vw;
     height: 65vh;
     margin: 0;
@@ -151,237 +159,221 @@ form.letusform {
     color: #ffedd1;
     position: relative;
     background-color: #355e58b5;
-}
-
-@media (760px <=width <=1200px) {
-    form.letusform {
-        width: 35vw;
-        height: 65vh;
-        margin: 0;
-        font-family: "Teko";
-        font-style: bold;
-        text-align: left;
-        color: #ffedd1;
-        position: relative;
-        background-color: #355e58b5;
-    }
+  }
 }
 
 @media (300px <=width <=760px) {
-    form.letusform {
-        width: 100vw;
-        height: 60vh;
-        font-family: "Teko";
-        font-style: bold;
-        text-align: left;
-        color: #ffedd1;
-        background-color: #355e58b5;
-        top: 35vh;
-    }
+  form.letusform {
+    width: 100vw;
+    height: 60vh;
+    font-family: "Teko";
+    font-style: bold;
+    text-align: left;
+    color: #ffedd1;
+    background-color: #355e58b5;
+    top: 35vh;
+  }
 }
 
 form div.fullname {
-    width: 22vw;
-    height: 3vh;
-    font-size: 1.3em;
-    margin: 0;
-    top: 21vh;
-    left: 7vw;
-    position: relative;
+  width: 22vw;
+  height: 3vh;
+  font-size: 1.3em;
+  margin: 0;
+  top: 21vh;
+  left: 7vw;
+  position: relative;
 }
 
 @media (760px <=width <=1200px) {
-    form div.fullname {
-        width: 22vw;
-        height: 3vh;
-        font-size: 0.8em;
-        margin: 0;
-        top: 20vh;
-        left: 7vw;
-        position: relative;
-    }
+  form div.fullname {
+    width: 22vw;
+    height: 3vh;
+    font-size: 0.8em;
+    margin: 0;
+    top: 20vh;
+    left: 7vw;
+    position: relative;
+  }
 }
 
 @media (300px <=width <=760px) {
-    form div.fullname {
-        font-size: 1.2em;
-        width: 80vw;
-        height: 7vh;
-        text-align: left;
-        top: 7vh;
-        left: 10vw;
-    }
+  form div.fullname {
+    font-size: 1.2em;
+    width: 80vw;
+    height: 7vh;
+    text-align: left;
+    top: 7vh;
+    left: 10vw;
+  }
 }
 
 form input[type="text"] {
-    width: 22vw;
-    height: 3vh;
-    font-family: "Teko";
-    font-size: 1.3em;
-    background-color: #ffedd1;
-    border: none;
-    border-bottom: 5px inset #fe9179;
+  width: 22vw;
+  height: 4vh;
+  font-family: "Teko";
+  font-size: 1.3em;
+  background-color: #ffedd1;
+  border: none;
+  border-bottom: 5px inset #fe9179;
 }
 
 @media (760px <=width <=1200px) {
-    form input[type="text"] {
-        width: 22vw;
-        height: 3vh;
-        font-family: "Teko";
-        font-size: 0.8em;
-        background-color: #ffedd1;
-        border: none;
-        border-bottom: 5px inset #fe9179;
-    }
+  form input[type="text"] {
+    width: 22vw;
+    height: 3vh;
+    font-family: "Teko";
+    font-size: 0.8em;
+    background-color: #ffedd1;
+    border: none;
+    border-bottom: 5px inset #fe9179;
+  }
 }
 
 @media (300px <=width <=760px) {
-    form input[type="text"] {
-        font-family: "Teko";
-        font-size: 1.2em;
-        background-color: #ffedd1;
-        border: none;
-        border-bottom: 5px inset #fe9179;
-        width: 80vw;
-        height: 4vh;
-        text-align: left;
-        left: 10vw;
-    }
+  form input[type="text"] {
+    font-family: "Teko";
+    font-size: 1.2em;
+    background-color: #ffedd1;
+    border: none;
+    border-bottom: 5px inset #fe9179;
+    width: 80vw;
+    height: 4vh;
+    text-align: left;
+    left: 10vw;
+  }
 }
 
 form div.email {
-    width: 22vw;
-    height: 3vh;
-    font-size: 1.3em;
-    margin: 0;
-    top: 24vh;
-    left: 7vw;
-    position: relative;
+  width: 22vw;
+  height: 3vh;
+  font-size: 1.3em;
+  margin: 0;
+  top: 24vh;
+  left: 7vw;
+  position: relative;
 }
 
 @media (760px <=width <=1200px) {
-    form div.email {
-        width: 22vw;
-        height: 3vh;
-        font-size: 0.8em;
-        margin: 0;
-        top: 22vh;
-        left: 7vw;
-        position: relative;
-    }
+  form div.email {
+    width: 22vw;
+    height: 3vh;
+    font-size: 0.8em;
+    margin: 0;
+    top: 22vh;
+    left: 7vw;
+    position: relative;
+  }
 }
 
 @media (300px <=width <=760px) {
-    form div.email {
-        width: 80vw;
-        height: 4vh;
-        text-align: left;
-        top: 9vh;
-        left: 10vw;
-        font-size: 1.2em;
-    }
+  form div.email {
+    width: 80vw;
+    height: 4vh;
+    text-align: left;
+    top: 9vh;
+    left: 10vw;
+    font-size: 1.2em;
+  }
 }
 
 form input[type="email"] {
+  width: 22vw;
+  height: 4vh;
+  font-family: "Teko";
+  font-size: 1.3em;
+  background-color: #ffedd1;
+  border: none;
+  border-bottom: 5px inset #fe9179;
+}
+
+@media (760px <=width <=1200px) {
+  form input[type="email"] {
     width: 22vw;
     height: 3vh;
     font-family: "Teko";
-    font-size: 1.3em;
+    font-size: 0.8em;
     background-color: #ffedd1;
     border: none;
     border-bottom: 5px inset #fe9179;
-}
-
-@media (760px <=width <=1200px) {
-    form input[type="email"] {
-        width: 22vw;
-        height: 3vh;
-        font-family: "Teko";
-        font-size: 0.8em;
-        background-color: #ffedd1;
-        border: none;
-        border-bottom: 5px inset #fe9179;
-    }
+  }
 }
 
 @media (300px <=width <=760px) {
-    form input[type="email"] {
-        width: 80vw;
-        height: 4vh;
-        text-align: left;
-        top: 12vh;
-        left: 10vw;
-        font-family: "Teko";
-        font-size: 1.2em;
-        background-color: #ffedd1;
-        border: none;
-        border-bottom: 5px inset #fe9179;
-    }
+  form input[type="email"] {
+    width: 80vw;
+    height: 4vh;
+    text-align: left;
+    top: 12vh;
+    left: 10vw;
+    font-family: "Teko";
+    font-size: 1.2em;
+    background-color: #ffedd1;
+    border: none;
+    border-bottom: 5px inset #fe9179;
+  }
 }
 
 div.send {
+  width: 22vw;
+  height: 4vh;
+  margin: 0;
+  top: 28vh;
+  left: 7vw;
+  position: relative;
+}
+
+@media (760px <=width <=1200px) {
+  div.send {
     width: 22vw;
     height: 3vh;
     margin: 0;
-    top: 28vh;
+    top: 25vh;
     left: 7vw;
     position: relative;
-
-}
-
-@media (760px <=width <=1200px) {
-    div.send {
-        width: 22vw;
-        height: 3vh;
-        margin: 0;
-        top: 25vh;
-        left: 7vw;
-        position: relative;
-
-    }
+  }
 }
 
 @media (300px <=width <=760px) {
-    div.send {
-        width: 80vw;
-        height: 5vh;
-        text-align: left;
-        top: 13.5vh;
-        left: 10vw;
-
-    }
+  div.send {
+    width: 80vw;
+    height: 3vh;
+    text-align: left;
+    top: 13.5vh;
+    left: 10vw;
+  }
 }
 
 form input[type="submit"] {
-    width: 8.5vw;
-    height: 3vh;
-    font-family: "Teko";
-    font-size: 1.3em;
-    color: #ffedd1;
-    background-color: #fe9179;
-    border: none;
+  width: 8.5vw;
+  height: 4vh;
+  font-family: "Teko";
+  font-size: 1.3em;
+  color: #ffedd1;
+  background-color: #fe9179;
+  border: none;
 }
 
 @media (760px <=width <=1200px) {
-    form input[type="submit"] {
-        width: 8.5vw;
-        height: 3vh;
-        font-family: "Teko";
-        font-size: 0.8em;
-        color: #ffedd1;
-        background-color: #fe9179;
-        border: none;
-    }
+  form input[type="submit"] {
+    width: 8.5vw;
+    height: 3vh;
+    font-family: "Teko";
+    font-size: 0.8em;
+    color: #ffedd1;
+    background-color: #fe9179;
+    border: none;
+  }
 }
 
 @media (300px <=width <=760px) {
-    form input[type="submit"] {
-        width: 80vw;
-        height: 4vh;
-        font-family: "Teko";
-        font-size: 1.2em;
-        color: #ffedd1;
-        background-color: #fe9179;
-        border: none;
-    }
+  form input[type="submit"] {
+    width: 80vw;
+    height: 4vh;
+    font-family: "Teko";
+    font-size: 1.2em;
+    color: #ffedd1;
+    background-color: #fe9179;
+    border: none;
+  }
 }

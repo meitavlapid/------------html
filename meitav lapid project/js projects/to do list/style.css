@@ -1,0 +1,157 @@
+
+@font-face {
+    font-family: 'os_luizi_round_ffcregular';
+    src: url('./OS-Luizi-FFC-v1/OS-Luizi-Round-Webfonts-V1/os_luizi_round-ffc-web.woff2') format('woff2'),
+        url('./OS-Luizi-FFC-v1/OS-Luizi-Round-Webfonts-V1/os_luizi_round-ffc-web.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #4ff0d5;
+    font-family: 'os_luizi_round_ffcregular';
+}
+
+.main-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.ta-wrapper {
+    background: #f5f78c;
+    color: #ee4d82;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 7px 7px rgb(0 0 0 / 20%);
+    min-height: 300px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.heading h1 {
+    text-align: center;
+    color: #ee4d82;
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: 'os_luizi_round_ffcregular';
+}
+
+.input-wrapper {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper input {
+    font-size: 1.2rem;
+    font-family: 'os_luizi_round_ffcregular';
+    outline: none;
+    border: 0;
+    background: #4ff0d5b2;
+    padding: 10px;
+    color: #ee4d82;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.input-wrapper button {
+    background: #ee4d82;
+    color: #f5f78c;
+    border: 0;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 2px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #4ff0d562;
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+
+.todo-item input {
+    background: transparent;
+    font-size: 1.2rem;
+    border: #4ff0d5;
+    color: #ee4d82;
+    outline: none;
+    flex-grow: 1;
+    margin-right: 10px;
+    font-family: 'os_luizi_round_ffcregular';
+}
+
+.todo-item i {
+    color: #e55c8a;
+    background: transparent;
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 6px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    margin-left: 5px;
+}
+
+
+.done {
+    text-decoration: line-through;
+}
+
+.fa-x {
+    padding: 6px 8px !important;
+}
+
+.fa-pen-to-square {
+    padding: 6px 8px !important;
+}
+
+@media (max-width: 768px) {
+    .heading h1 {
+        font-size: 30px;
+    }
+
+    .input-wrapper input,
+    .input-wrapper button {
+        font-size: 14px;
+    }
+
+    .todo-item input {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading h1 {
+        font-size: 24px;
+    }
+
+    .input-wrapper input,
+    .input-wrapper button {
+        font-size: 12px;
+    }
+
+    .todo-item {
+        flex-direction: column;
+    }
+
+    .todo-item i {
+        margin: 10px 0;
+    }
+}

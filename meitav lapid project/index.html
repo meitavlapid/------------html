@@ -1,169 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>home page</title>
-    <link rel="stylesheet" href="cssstayl.css">
-    <link rel="preconnect" href="https://fonts.
-    googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.
-    com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?
-    family=Pacifico&family=Sixtyfour+Convergence&
-    display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.
-    googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.
-    com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?
-    family=Pacifico&family=Sixtyfour+Convergence&
-    family=Teko&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="cssstayl.css" />
+    <link
+      rel="preconnect"
+      href="https://fonts.
+    googleapis.com"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
-<body>
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.
+    com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?
+    family=Pacifico&family=Sixtyfour+Convergence&
+    display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.
+    googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.
+    com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?
+    family=Pacifico&family=Sixtyfour+Convergence&
+    family=Teko&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
     <header>
-        <div id="navbar">
-            <nav class="nav">
-                <a class="main" href="#main">main</a>
-                <a href="#about">about</a>
-                <a href="#gallery">gallery</a>
-                <a href="#contact">contact</a>
-                <img class="profile" src="images/meitav profile pic.jpg" alt="profile pic">
-                <img class="name" src="images/meitav lapid name .png" alt="meitav lapid logo">
-            </nav>
-        </div>
+      <div id="navbar">
+        <nav class="nav">
+          <a class="main" href="#main">main</a>
+          <a href="#about">about</a>
+          <a href="#gallery">css gallery</a>
+          <a href="#jsgallery">js gallery</a>
+          <a href="#contact">contact</a>
+          <img
+            class="profile"
+            src="images/meitav profile pic.jpg"
+            alt="profile pic"
+          />
+          <img
+            class="name"
+            src="images/meitav lapid name .png"
+            alt="meitav lapid logo"
+          />
+          <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </nav>
+      </div>
     </header>
     <section id="main">
-        <h1>portfolio</h1>
-        <p> This portfolio showcases my work in HTML and CSS, focusing on creating responsive, user-friendly, and
-            visually appealing
-            web pages. Each project reflects my attention to detail in layout, color, and typography, with an emphasis
-            on
-            accessibility and seamless design across devices. I'm excited to continue exploring creative and functional
-            web
-            development.
-        </p>
+      <h1>portfolio</h1>
+      <p>
+        This portfolio showcases my work in HTML and CSS, focusing on creating
+        responsive, user-friendly, and visually appealing web pages. Each
+        project reflects my attention to detail in layout, color, and
+        typography, with an emphasis on accessibility and seamless design across
+        devices. I'm excited to continue exploring creative and functional web
+        development.
+      </p>
     </section>
     <div class="techIcons">
-        <img src="images/img-CSS@2x.png" alt="img-CSS">
-        <img src="images/img-HTML@2x.png" alt="img-HTML">
+      <img src="images/img-Bootstrap@2x.png" alt="" />
+      <img src="images/img-CSS@2x.png" alt="" />
+      <img src="images/img-HTML@2x.png" alt="" />
+      <img src="images/img-JS@2x.png" alt="" />
     </div>
     <div id="about">
-        <img class="profilepic2" src="images/meitav profile pic.jpg" alt="profile pic">
-        <h1 class="headlien">about me</h1>
-        <p class="aboutme"> After spending 15 years as a kindergarten teacher, helping young minds grow and discover
-            their potential, I’m now on an
-            exciting journey into the world of programming. This career shift feels like a new beginning, one where I
-            can bring my
-            creativity, patience, and problem-solving skills into a fresh context. I live in Kibbutz Zorea with my three
-            wonderful
-            children, a playful dog, and three cats who keep life lively and full of love. Embracing this challenge has
-            been a
-            rewarding experience, and I look forward to blending my background in education with my new technical skills
-            to make a
-            meaningful impact.
-        </p>
-        <p class="reseme"><a href="images/מיטב לפיד קורות חיים .docx">Download <br>resume</a></p>
+      <img
+        class="profilepic2"
+        src="images/meitav profile pic.jpg"
+        alt="profile pic"
+      />
+      <h1 class="headlien">about me</h1>
+      <p class="aboutme">
+        After spending 15 years as a kindergarten teacher, helping young minds
+        grow and discover their potential, I’m now on an exciting journey into
+        the world of programming. This career shift feels like a new beginning,
+        one where I can bring my creativity, patience, and problem-solving
+        skills into a fresh context. I live in Kibbutz Zorea with my three
+        wonderful children, a playful dog, and three cats who keep life lively
+        and full of love. Embracing this challenge has been a rewarding
+        experience, and I look forward to blending my background in education
+        with my new technical skills to make a meaningful impact.
+      </p>
+      <p class="reseme">
+        <a href="images/מיטב לפיד קורות חיים .docx">Download <br />resume</a>
+      </p>
     </div>
     <div id="gallery">
-        <h1 class="container1">Selected works</h1>
-        <p class="container2"> These selected works highlight my ability to craft responsive, accessible, and visually
-            engaging web pages using HTML
-            and CSS. Each project demonstrates my attention to detail and creativity, from carefully structured layouts
-            to
-            thoughtful choices in color, typography, and styling. Through these examples, you can see my commitment to
-            building
-            user-friendly experiences that adapt seamlessly across devices.</p>
-        <div class="itemproject1"><img src="images/project 1.png" alt="project 1 pic">
+      <h1 class="container1">Selected works in HTML and CSS</h1>
+      <p class="container2">
+        These selected works highlight my ability to craft responsive,
+        accessible, and visually engaging web pages.
+      </p>
+      <div class="card w-75 mb-3">
+        <img
+          src="images/project 1.png"
+          alt="project 1 pic"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">project 1</h5>
+          <p class="card-text">
+            This contact form page combines a clean, elegant design.
+          </p>
+          <a href="option1.html" class="btn btn-primary">project page</a>
+        </div>
+      </div>
 
-            <h1>project 1</h1>
-            <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, facilis?
-            </P><a href="option1.html">project<br> page</a>
+      <div class="card w-75 mb-3">
+        <img
+          src="images/project 2.png"
+          alt="project 2 pic"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">project 2</h5>
+          <p class="card-text">
+            This design highlights my ability to use color gradients, balanced
+            spacing, and cohesive styling to create an inviting, aesthetically
+            pleasing user experience.
+          </p>
+          <a href="option2.html" class="btn btn-primary">project page</a>
         </div>
-        <div class="itemproject2"><img src="images/project 2.png" alt="project 2 pic">
-            <h1>project 2</h1>
-            <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, facilis?
-            </P>
+      </div>
 
-            <a href="option2.html">project<br> page</a>
+      <div class="card w-75 mb-3">
+        <img
+          src="images/project 3.png"
+          alt="project 3 pic"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">project 3</h5>
+          <p class="card-text">
+            This coffee coupon page combines a warm, inviting design with an
+            eye-catching image of latte art, setting the perfect mood for coffee
+            lovers.
+          </p>
+          <a href="option3.html" class="btn btn-primary">project page</a>
         </div>
-        <div class="itemproject3"><img src="images/project 3.png" alt="project 3 pic">
-            <h1>project 3</h1>
-            <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, facilis?
-            </P>
+      </div>
 
-            <a href="option3.html">project <br>page</a>
+      <div class="card w-75 mb-3">
+        <img
+          src="images/project 4.png"
+          alt="project 4 pic"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">project 4</h5>
+          <p class="card-text">
+            This visually striking page invites users to embark on a journey,
+            with a nighttime sky background that adds a sense of depth and
+            wonder.
+          </p>
+          <a href="option4.html" class="btn btn-primary">project page</a>
         </div>
-        <div class="itemproject4"><img src="images/project 4.png" alt="project 4 pic">
-            <h1>project 4</h1>
-            <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, facilis?
-            </P>
-            <a href="option4.html">project<br>page</a>
+      </div>
+      <div class="card w-75 mb-3">
+        <img
+          src="images/option5web.jpg"
+          alt="project 5 pic"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">project 5</h5>
+          <p class="card-text">
+            This "Discover the World" page captures the essence of global
+            exploration with a vibrant grid of travel images, each highlighting
+            different scenes and experiences from around the world.
+          </p>
+          <a href="option5.html" class="btn btn-primary">project page</a>
         </div>
-        <div class="itemproject5"><img src="images/option5web.jpg" alt="project 5 pic">
-            <h1>project 5</h1>
-            <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, facilis?
-            </P>
-            <a href="option5.html">project<br> page</a>
+      </div>
+      <div class="card w-75 mb-3">
+        <img
+          src="images/option6.png"
+          alt="project 6 pic"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">project 6</h5>
+          <p class="card-text">
+            עמוד הייעוץ הזה מציע עיצוב נקי ומזמין, שמאפשר למשתמשים להשאיר פרטים
+            בקלות ולבקש ייעוץ חינם ממומחה.
+          </p>
+          <a href="option6.html" class="btn btn-primary">project page</a>
         </div>
-        <div class="itemproject6"><img src="images/option6.jpg" alt="project 6 pic">
-            <h1>project 6</h1>
-            <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, facilis?
-            </P>
+      </div>
 
-            <a href="option6.html">project<br>page</a>
+      <div class="card w-75 mb-3">
+        <img
+          src="images/option7 web.png"
+          alt="project 7 pic"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">project 7</h5>
+          <p class="card-text">
+            עמוד המידע הזה נועד לספק למשתמשים הדרכה ברורה ונגישה על אזורי שירות
+            שונים.
+          </p>
+          <a href="option7.html" class="btn btn-primary">project page</a>
         </div>
-        <div class="itemproject7"><img src="images/option7 web1.jpg" alt="project 7 pic">
-            <h1>project 7</h1>
-            <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, facilis?
-            </P>
-
-            <a href="option7.html">project<br> page</a>
-        </div>
+      </div>
     </div>
-    <div id="formbox">
-        <form class="theform">
-            <h1>contact us</h1>
-            <label for="firstname">full name</label><br>
-            <input type="text" id="firstname" placeholder="full name" required><br><br>
-            <label for="email">email</label><br>
-            <input type="email" id="email" placeholder="user@domain" required><br><br>
-            <label for="phone">phone number</label><br>
-            <input type="tel" id="phone" placeholder="phone number" required><br><br>
-            <label for="text">message content</label><br>
-            <textarea id="text" required></textarea><br><br>
-            <input type="submit" value="send"><br>
-        </form>
 
-        <div><img class="formimg" src="images/Rectangle 41/Rectangle 41.png" alt="envelope Picture ">
-        </div>
+    <section id="jsgallery">
+      <h1>JavaScript Projects</h1>
+      <p>
+        Explore projects showcasing interactive features and dynamic web
+        applications built with JavaScript.
+      </p>
+
+      <div class="card w-75 mb-3">
+        <img src="images/math game .png" alt="JS Project 1" />
+        <h5>משחק מתמטי</h5>
+        <a href="/meitav lapid project/js projects/math game/project1.html"
+          >לדף המשחק</a
+        >
+      </div>
+      <div class="card w-75 mb-3">
+        <img src="images/nivigame .png" alt="JS Project 2" />
+        <h5>השלם את התמונה</h5>
+        <a href="/meitav lapid project/js projects/nivigame/project2.html"
+          >לדף המשחק</a
+        >
+      </div>
+      <div class="card w-75 mb-3">
+        <img src="images/snak game.png" alt="JS Project 3" />
+        <h5>סנייק</h5>
+        <a href="/meitav lapid project/js projects/snake/project3.html"
+          >לדף המשחק</a
+        >
+      </div>
+      <div class="card w-75 mb-3">
+        <img src="images/Taki game .png" alt="JS Project 4" />
+        <h5>טאקי</h5>
+        <a href="/meitav lapid project/js projects/taki/project4.html"
+          >לדף המשחק</a
+        >
+      </div>
+      <div class="card w-75 mb-3">
+        <img src="images/todo list .png" alt="JS Project 5" />
+        <h5>אפליקציית רשימות</h5>
+        <a href="/meitav lapid project/js projects/to do list/project5.html"
+          >לדף האפליקציה</a
+        >
+      </div>
+      <div class="card w-75 mb-3">
+        <img src="images/wether app.png" alt="JS Project 6" />
+        <h5>אפליקצית מזג-אויר</h5>
+        <a href="/meitav lapid project/js projects/wether/project6.html"
+          >לדף האפליקציה</a
+        >
+      </div>
+    </section>
+    <div id="formbox">
+      <form class="theform">
+        <h1>contact us</h1>
+        <label for="firstname">full name</label><br />
+        <input type="text" id="firstname" placeholder="  full name" required />
+        <span class="error"></span>
+        <br /><br />
+        <label for="  email">email</label><br />
+        <input type="email" id="email" placeholder="  user@domain" required />
+        <span class="error"></span><br /><br />
+        <label for="phone">phone number</label><br />
+        <input type="tel" id="phone" placeholder="  phone number" required />
+        <span class="error"></span><br /><br />
+        <label for="message">message content</label><br />
+        <textarea id="message" required></textarea><br /><br />
+        <input type="submit" value="send" /><br />
+      </form>
+
+      <div>
+        <img
+          class="formimg"
+          src="images/Rectangle 41/Rectangle 41.png"
+          alt="envelope Picture "
+        />
+      </div>
     </div>
 
     <div id="contact">
-        <div class="facebook"><img src="images/Icon awesome-facebook-f.png" alt="facebook Icon">
-            <figcaption>Meitav Lapid</figcaption>
-        </div>
-        <!-- <div class="linkedin"><img src="images/Icon awesome-linkedin-in.png" alt="linkedin Icon"> -->
-        <!-- <figcaption>linkedin</figcaption> -->
-        <!-- </div> -->
-        <div class="Phone"><img src="images/Icon Phone number.png" alt="Phone number">
-            <figcaption>0547-232616</figcaption>
-        </div>
-        <div class="whatsapp"> <img src="images/Icon awesome-whatsapp.png" alt="whatsapp Icon">
-            <figcaption>0547-232616</figcaption>
-        </div>
-        <div class="email"> <img src="images/Icon simple-email@2x.png" alt="email Icon">
-            <figcaption>meitavlapid@gmail.com</figcaption>
-        </div>
-        <div class="location"> <img src="images/Icon material-location-on.png" alt="location Icon">
-            <figcaption>kibutz hazora</figcaption>
-        </div>
+      <div class="facebook">
+        <img src="images/Icon awesome-facebook-f.png" alt="facebook Icon" />
+        <figcaption>Meitav Lapid</figcaption>
+      </div>
+      <!-- <div class="linkedin"><img src="images/Icon awesome-linkedin-in.png" alt="linkedin Icon"> -->
+      <!-- <figcaption>linkedin</figcaption> -->
+      <!-- </div> -->
+      <div class="Phone">
+        <img src="images/Icon Phone number.png" alt="Phone number" />
+        <figcaption>0547-232616</figcaption>
+      </div>
+      <div class="whatsapp">
+        <img src="images/Icon awesome-whatsapp.png" alt="whatsapp Icon" />
+        <figcaption>0547-232616</figcaption>
+      </div>
+      <div class="email">
+        <img src="images/Icon simple-email@2x.png" alt="email Icon" />
+        <figcaption>meitavlapid@gmail.com</figcaption>
+      </div>
+      <div class="location">
+        <img src="images/Icon material-location-on.png" alt="location Icon" />
+        <figcaption>kibutz hazora</figcaption>
+      </div>
     </div>
     <footer>
-        <p class="botoomname">meitav lapid &copy</p>
+      <p class="botoomname">meitav lapid &copy</p>
     </footer>
-</body>
-
+    <script src="script.js" defer></script>
+  </body>
 </html>
