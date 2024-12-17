@@ -137,6 +137,7 @@ section h1 {
 }
 
 section p {
+  direction: rtl;
   font-family: "Teko", serif;
   font-size: 2em;
   color: #72b0ab;
